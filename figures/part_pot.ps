@@ -1,0 +1,3473 @@
+%!PS-Adobe-3.0
+%%BoundingBox: 0 0 612 792
+%%Creator: Abaqus/CAE
+%%Version: 6.14-2
+%%LanguageLevel: 2
+%%DocumentData: Clean8Bit
+%%Title: C:/Users/abdu0003/Documents/abaqus/Projet/part_pot.ps
+%%Pages: 1
+%%For: abdu0003
+%%Orientation: Portrait
+%%DocumentSuppliedResources: procset hksDrawingMacros 1.0 1
+%%+ procset hksEmbeddEps 1.0 1
+%%+ procset hksPsErrorHandler 1.0 1
+%%EndComments
+%%BeginProlog
+%%BeginResource: procset hksDrawingMacros 1.0 1
+/m {moveto} bind def /l {lineto} bind def /ls {lineto stroke} bind def
+/SMS {setfont moveto show} bind def /MS {moveto show} bind def
+%%EndResource
+%%BeginResource: procset hksPsErrorHandler 1.0 1
+/currentpacking where{pop/hks_setpacking_old currentpacking def/setpacking 
+where{pop false setpacking}if}if/$hksErrDict 70 dict def $hksErrDict begin
+/hksStrBuffer 128 string def/hks_countexecstack_startup countexecstack def/rbd
+{bind readonly def}bind def/codeIndent 24 def/leftMargin 72 def/rightMargin 72 
+def/bottomMargin 72 def/topMargin 72 def/textHeight 10 def/pageHeight 792 def
+/pageWidth 612 def/hksFontErrMsgUser/Courier-Bold findfont textHeight 
+scalefont def/hksFontErrMsgTech/Courier findfont textHeight scalefont def
+/hksFontErrMsgCode/Courier findfont 8 scalefont def/hksLanguageLevel
+/languagelevel where{pop languagelevel}{1}ifelse def/hksReserved 4 array dup 
+length 1 sub 0 1 3 -1 roll{1 index exch 8 1024 mul string put}for def
+/hksMaxMem 0 def/hksUsedMem 0 def/showString{dup type/stringtype eq{dup print}
+{pop (Invalid argument passed to showString)}ifelse 0 setgray show}rbd/nl{(\n)
+print currentpoint exch pop dup bottomMargin le{textHeight sub leftMargin exch 
+moveto (\(Error log continues on next page\)... )showString systemdict
+/showpage get exec pageHeight topMargin sub}if textHeight sub leftMargin exch 
+moveto}rbd/showTyped{dup type dup currentdict exch known{exec}{unknowntype}
+ifelse}rbd/nlIfLongString{stringwidth pop currentpoint pop add pageWidth 
+rightMargin sub gt{nl}if}rbd/showWrapped{dup nlIfLongString showString}rbd
+/drawHorzLineAcross{/y exch def gsave 0 setgray .5 setlinewidth newpath 
+leftMargin y moveto pageWidth rightMargin sub y lineto stroke grestore 40{(--)
+print}repeat}rbd/cvsShowWrapped_{hksStrBuffer cvs showWrapped ( )showWrapped}
+rbd/cvsShowString{hksStrBuffer cvs showString}rbd/unknowntype{exch pop 
+([WARNING] Unable to print value of a )showWrapped cvlit cvsShowWrapped_
+(variable)showWrapped}rbd/booleantype{cvsShowWrapped_}rbd/integertype{
+cvsShowWrapped_}rbd/realtype{cvsShowWrapped_}rbd/operatortype{cvsShowWrapped_}
+rbd/filetype{pop (-filestream- )showWrapped}rbd/fonttype{pop (-fontid- )
+showWrapped}rbd/marktype{pop (-mark- )showWrapped}rbd/nulltype{pop (null )
+showWrapped}rbd/savetype{pop (-savelevel- )showWrapped}rbd/dictdict [{
+(systemdict)dup load exch}systemdict/globaldict known{{(globaldict)dup load 
+exch}}if{(userdict)dup load exch}{(statusdict)dup load exch}{(serverdict)dup 
+load exch}{(FontDirectory)dup load exch}/internaldict where{pop{1183615869 
+internaldict(internaldict)}}if{currentdict(dictdict)}] dup length dict begin{
+exec def}forall currentdict end def/dicttype{dup dictdict exch known{dictdict 
+exch get showWrapped ( )showWrapped}{userdict{2 index eq{true exit}{pop}ifelse
+}forall dup true eq{pop exch pop}{systemdict{2 index eq{true exit}{pop}ifelse}
+forall dup true eq{pop exch pop}{pop ( -dictionary- )}ifelse}ifelse showTyped}
+ifelse}rbd/nametype{dup xcheck not{(/)showString}if cvsShowWrapped_}rbd
+/stringtype{dup rcheck{(\(\))stringwidth pop dup/rightMargin rightMargin 3 -1 
+roll add def exch dup nlIfLongString(\()showString showString (\) )showString
+/rightMargin rightMargin 3 -1 roll sub def}{pop (-string- )showWrapped}ifelse}
+rbd/arraytype{dup rcheck{dup xcheck{(} )({ )}{(\] )(\[ )}ifelse showWrapped 
+exch{showTyped}forall showWrapped}{pop (-array- )showWrapped}ifelse}rbd
+/packedarraytype{dup rcheck{dup xcheck{(*} )({* )}{(*\] )(\[* )}ifelse 
+showWrapped exch{showTyped}forall showWrapped}{pop (-packedarray- )showWrapped
+}ifelse}rbd/printStack{exch showString dup $error exch known not{([ERROR]/)
+showString cvlit cvsShowString ( not found on $error dictionary)showString}{
+dup/nonPrintElemCount exch/estack eq{hks_countexecstack_startup}{0}ifelse def 
+dup $error exch get dup null eq{pop ([WARNING] Retrieved an empty/)showString 
+cvlit cvsShowString}{aload length nonPrintElemCount sub dup 0 le{(Empty)
+showString pop}{dup cvsShowString ( elements)showString/fontPrevious 
+currentfont def hksFontErrMsgCode setfont/leftMargin leftMargin codeIndent add 
+def nl 1 1 3 -1 roll{(#)showString cvsShowString (: )showString/leftMargin 
+leftMargin (#99: )stringwidth pop add def showTyped/leftMargin leftMargin 
+(#99: )stringwidth pop sub def nl}for nonPrintElemCount{pop}repeat/leftMargin 
+leftMargin codeIndent sub def fontPrevious setfont}ifelse pop}ifelse}ifelse nl
+}readonly def/printCodeFollowingError{$hksErrDict begin (Code AFTER error : )
+showString/leftMargin leftMargin codeIndent add def/fontPrevious currentfont 
+def hksFontErrMsgCode setfont nl save/old_rangecheck errordict/rangecheck get 
+def errordict/rangecheck{stop}bind put errorname hksStrBuffer cvs
+(/invalidrestore)eq{([WARNING] This may be the code following a restore other \
+than the one causing the error)showString nl}if/strLine 257 string def
+/handleStdin(%stdin)(r)file def 5 -1 1{handleStdin strLine{readline}stopped{}
+if not{pop pop(<<EOF>>)showString nl exit}{/strFromFile exch def 0 80 
+strFromFile length 1 sub{strFromFile dup length 3 -1 roll exch 1 index sub dup 
+80 gt{pop 80 true}{false}ifelse 4 1 roll getinterval showString{(...)
+showString}if nl}for 1 eq{(\(file continues...\))showString nl}if}ifelse}for 
+errordict/rangecheck/old_rangecheck load put currentpoint 3 -1 roll restore 
+fontPrevious setfont/leftMargin leftMargin codeIndent sub def end moveto}rbd
+/strNotEnoughMemory (The printer does not have enough memory to print this \
+document)def/strRestartAndSendAgain (restart the printer and send the \
+document again)def/strTryAnotherPrinter (print to another printer, if \
+available)def/strTryLevel2PrtOrAddMem hksLanguageLevel 2 lt{(print to a \
+PostScript Level II printer, if available;)}{(install more memory on this \
+printer;)}ifelse def/strReduceMemoryUsage (reduce the amount of memory \
+required for this document by:)def/strUseSmallerPaper (- using a smaller \
+paper size)def/strIncreaseMargins (- increasing the paper margins)def
+/strLowerResolution (- lowering the resolution)def/dictSuggestions [ 
+hksLanguageLevel 2 ge{{/configurationerror{[ (Attempted to set a \
+configuration attribute not supported by this printer.)]}}}if{/dictfull [ (A \
+PostScript dictionary reached its maximum capacity)strRestartAndSendAgain 
+strTryLevel2PrtOrAddMem ]}{/dictstackoverflow [ (The number of dictionaries \
+reached its maximum value on this printer)strRestartAndSendAgain 
+strTryAnotherPrinter ]}{/dictstackunderflow [()strRestartAndSendAgain ]}{
+/execstackoverflow [ (The execution stack reached its maximum size on this \
+printer)strRestartAndSendAgain strTryAnotherPrinter ]}{/interrupt [ (Printing \
+operation was stopped or cancelled)strRestartAndSendAgain ]}{/invalidaccess []
+}{/invalidexit []}{/invalidfileaccess []}{/invalidfont [ (Unavailable or \
+possibly corrupted printer font)(reinstall printer fonts used within the \
+document)strRestartAndSendAgain ]}{/invalidrestore []}{/ioerror{[/command load 
+hksStrBuffer cvs(findfont)eq{(Error while searching for a printer font \
+(possibly in printer's hard disk))}{(A problem occurred while accessing a \
+file)(check printer and network connections and terminations)
+strRestartAndSendAgain}ifelse ]}}{/limitcheck [ (A printer limit of some sort \
+(possibly maximum memory) was reached)strReduceMemoryUsage strUseSmallerPaper 
+strIncreaseMargins strLowerResolution strRestartAndSendAgain 
+strTryAnotherPrinter strTryLevel2PrtOrAddMem ]}{/nocurrentpoint []}{
+/rangecheck{[/command load hksStrBuffer cvs(setpageparams)eq{(Selected paper \
+size is too large for this printer)(select a smaller paper size and print \
+again)}{()strRestartAndSendAgain}ifelse ]}}{/stackoverflow [ (The operand \
+stack reached its maximum size on this printer)strReduceMemoryUsage 
+strUseSmallerPaper strIncreaseMargins strLowerResolution 
+strTryLevel2PrtOrAddMem strRestartAndSendAgain ]}{/stackunderflow []}{
+/syntaxerror []}{/timeout [ (A timeout occurred while attempting to contact \
+the printer)(check printer and network connections and terminations;)(check \
+whether you are able to print a wireframe (non-shaded, non-hidden) image;)
+(reduce the size of this document by:)strUseSmallerPaper strIncreaseMargins 
+strLowerResolution ]}{/typecheck []}{/undefined []}{/undefinedfilename []}
+hksLanguageLevel 2 ge{{/undefinedresource []}}if{/undefinedresult []}{
+/unmatchedmark []}{/unregistered []}{/VMerror [ strNotEnoughMemory 
+strReduceMemoryUsage strUseSmallerPaper strIncreaseMargins strLowerResolution 
+strTryLevel2PrtOrAddMem strRestartAndSendAgain ]}] dup length dict begin{exec 
+def}forall currentdict end def/printSuggestions{dictSuggestions errorname 
+known{dictSuggestions errorname get dup xcheck{exec}if dup length}{[ ] 0}
+ifelse dup 0 gt{1 index 0 get dup length 0 gt{codeIndent 0 rmoveto showString 
+nl nl}{pop}ifelse dup 1 gt{dup 2 gt{(To solve this problem try each of the \
+following actions (by the order shown):)}{(To solve this problem try to:)}
+ifelse showString/leftMargin leftMargin codeIndent add def dup 1 1 3 -1 roll 1 
+sub{2 index exch get dup length 1 ge{nl dup 0 1 getinterval dup dup(-)eq exch 
+( )eq or{(\267 )stringwidth pop 0 rmoveto ( )eq{dup length 1 sub 1 exch 
+getinterval}if}{pop 0 textHeight 2 div neg rmoveto (\267 )showString}ifelse 
+showString}{pop}ifelse}for/leftMargin leftMargin codeIndent sub def nl nl (If \
+the document still does not print, please contact HKS support.)}{(Please \
+contact HKS support.)}ifelse}{(Please contact HKS support.)}ifelse showString 
+pop pop nl nl [ (To learn which office you should contact for support read \
+the document that)(can be found at:)()(    http://www.hks.com/support)()(Be \
+prepared to provide the following information that will help solving this)
+(problem:)()(    1. printer brand, model and amount of memory;)(    2. a copy \
+of this file \(if this was sent directly to the printer print it)(       to \
+file and send that file\);)(    3. an hardcopy of this page \(either by fax \
+or by scanner + email\).)()]{showString nl}forall}def/hks_handleerror_startup 
+errordict/handleerror get def/hks_VMerror_startup errordict/VMerror get def
+/uninstall_hks_errorhandler{systemdict begin errordict/handleerror $hksErrDict
+/hks_handleerror_startup get put errordict/VMerror $hksErrDict
+/hks_VMerror_startup get put end}rbd end/VMerror{$hksErrDict/hksReserved 0 put 
+2 vmreclaim false setglobal $error begin/errorname/VMerror def/newerror true 
+def/command exch def/estack [] def/dstack [] def/ostack [] def/recordstacks 
+false def end handleerror $hksErrDict/hks_VMerror_startup get exec}dup 0 
+$hksErrDict put readonly errordict 3 1 roll put/handleerror{systemdict begin 
+$error begin $hksErrDict begin newerror{$hksErrDict/hksReserved 0 put 2 
+vmreclaim/newerror false store vmstatus/hksMaxMem exch def/hksUsedMem exch def 
+0 ne{grestoreall}if initgraphics/left leftMargin textHeight sub def/right 
+pageWidth rightMargin sub textHeight add def/top pageHeight topMargin sub 
+textHeight add def/bottom bottomMargin textHeight sub def 1 1 1 setrgbcolor 
+newpath left bottom moveto left top lineto right top lineto right bottom 
+lineto closepath eofill hksFontErrMsgUser setfont leftMargin pageHeight 
+topMargin sub moveto currentpoint exch pop drawHorzLineAcross nl (A \
+PostScript error ocurred while printing this document.)showString nl nl 
+printSuggestions hksFontErrMsgTech setfont currentpoint exch pop 
+drawHorzLineAcross nl (PostScript Error Information:)showString nl nl
+/statusdict where{pop statusdict/jobname known{statusdict/jobname get dup 
+xcheck{exec}if hksStrBuffer cvs dup length 0 gt{(Job Name ....... : )
+showString showString nl}{pop}ifelse}if}if (Maximum memory   : )showString 
+hksMaxMem showTyped nl (Used memory      : )showString hksUsedMem showTyped nl 
+(PostScript Error : )showString errorname showTyped nl (Offending Command: )
+showString/command load showTyped nl (Saved Stacks ?   : )showString $error
+/recordstacks known{$error/recordstacks get}{false}ifelse{(Yes)}{(No)}ifelse 
+showString nl nl printCodeFollowingError nl (Operand Stack    : )/ostack 
+printStack nl (Execution Stack  : )/estack printStack nl (Dictionary Stack : \
+)/dstack printStack nl systemdict/showpage get exec/newerror true store flush 
+uninstall_hks_errorhandler end end end}{end end end}ifelse}dup 0 systemdict 
+put dup 4 $hksErrDict put bind readonly errordict 3 1 roll put/currentpacking 
+where{pop/setpacking where{pop hks_setpacking_old setpacking}if}if systemdict 
+begin $error/recordstacks known{$error/recordstacks true put}if end 
+%%EndResource
+%%BeginResource: procset hksEmbeddEps 1.0 1
+/BeginEPSF { /b4_Inc_State save def /dict_count countdictstack def
+/op_count count 1 sub def userdict begin /showpage {} def 0 setgray 0 setlinecap
+1 setlinewidth 0 setlinejoin 10 setmiterlimit [] 0 setdash newpath
+/languagelevel where { pop languagelevel
+1 ne {false setstrokeadjust false setoverprint} if } if } bind def
+/EndEPSF { count op_count sub {pop} repeat countdictstack dict_count sub 
+{end} repeat b4_Inc_State restore } bind def
+%%EndResource
+%%EndProlog
+%%BeginPageSetup
+/pSave save def
+%%EndPageSetup
+%%Page: 1 1
+
+gsave
+491.27 548.18 translate
+
+% Start of import
+BeginEPSF
+
+%%BeginDocument: Logo
+
+%!PS-Adobe-3.1
+%%Creator: (ABAQUS, Inc.)
+%%Title: (Logo.ps)
+%%Version: 2.0 2
+%%LanguageLevel: 1
+%%CreationDate: 15-Feb-2011
+%%ProofMode: Substitute
+%%Pages: 0
+%%EndComments
+%%BeginProlog
+%%EndProlog
+%%BeginPageSetup
+%%EndPageSetup
+%%Page: 1
+systemdict/setpacking known
+{currentpacking	true setpacking}if
+userdict/Adobe_AGM_Utils 75 dict dup begin put
+/bdf
+{bind def}bind def
+/nd{null def}bdf
+/ldf 
+{load def}bdf
+/ddf
+{put}bdf	
+/gx
+{get exec}bdf
+/ps_level
+	/languagelevel where{
+		pop systemdict/languagelevel gx
+	}{
+		1
+	}ifelse
+def
+/level2 
+	ps_level 2 ge
+def
+/level3 
+	ps_level 3 ge
+def
+/ps_version
+	{version cvr}stopped{-1}if
+def
+/capture_cpd{
+	//Adobe_AGM_Utils/AGMUTIL_cpd currentpagedevice ddf
+}def
+/clonearray
+{
+	dup xcheck exch
+	dup length array exch
+	Adobe_AGM_Core/AGMCORE_tmp -1 ddf 
+	{
+	Adobe_AGM_Core/AGMCORE_tmp 2 copy get 1 add ddf 
+	exch dup
+	Adobe_AGM_Core/AGMCORE_tmp get 4 -1 roll put
+	}forall
+	exch{cvx}if
+}bdf
+/clonedict
+{
+	dup length dict
+	begin
+	{
+		dup type/dicttype eq
+			{clonedict}if
+		dup type/arraytype eq
+			{clonearray}if
+		def
+	}forall
+	currentdict
+	end
+}bdf
+userdict/Adobe_AGM_Core 209 dict dup begin put
+/Adobe_AGM_Core_Id/Adobe_AGM_Core_2.0_0 def
+/AGMCORE_str256 256 string def
+/AGMCORE_&setgray nd
+/AGMCORE_&setcolor nd
+/AGMCORE_&setcolorspace nd
+/AGMCORE_&setcmykcolor nd
+/AGMCORE_ps_level -1 def
+/AGMCORE_ps_version -1 def
+currentglobal true setglobal
+[/CSA/Gradient/Procedure]
+{
+	/Generic/Category findresource dup length dict copy/Category defineresource pop
+}forall
+setglobal
+/np
+{newpath}bdf
+/clp_npth
+{clip np}def
+/npth_clp
+{np clip}def
+/ds{
+	Adobe_AGM_Core begin	
+	/AGMCORE_GSTATE 21 dict def
+	/AGMCORE_tmpmatrix matrix def
+	/AGMCORE_gstack 32 array def
+	/AGMCORE_gstackptr 0 def
+	/AGMCORE_gstacksaveptr 0 def
+	/AGMCORE_gstackframekeys 14 def
+	/AGMCORE_&gsave/gsave ldf				
+	/AGMCORE_gput{
+		AGMCORE_gstack AGMCORE_gstackptr get
+		3 1 roll
+		put
+	}def	
+	0 1 AGMCORE_gstack length 1 sub{
+			AGMCORE_gstack exch AGMCORE_gstackframekeys dict put
+	}for
+	end
+}def
+/ps
+{
+	Adobe_AGM_Core begin		
+	/sop/setoverprint ldf	
+	/mo/moveto ldf
+	/li/lineto ldf
+	/cv/curveto ldf
+	/cmyk[
+		/currentcolorspace[/DeviceCMYK]/AGMCORE_gput cvx
+		/setcmykcolor load dup type/operatortype ne{/exec cvx}if
+	]cvx bdf
+	/cp/closepath ldf
+	/clp/clp_npth ldf	
+	/ef/eofill ldf
+	/nclp/npth_clp ldf
+	/ct/concat ldf
+	/clonedict Adobe_AGM_Utils begin/clonedict load end def
+	/clonearray Adobe_AGM_Utils begin/clonearray load end def	
+}def
+/pt
+{
+	end
+}def
+/pgsv{
+	//Adobe_AGM_Core/AGMCORE_save save put
+}def
+/pgrs{
+	//Adobe_AGM_Core/AGMCORE_save get restore
+}def
+/add_res
+{
+	dup/CSD eq{
+		pop 
+		//Adobe_AGM_Core begin
+		/AGMCORE_CSD_cache load 3 1 roll put
+		end
+	}{
+		defineresource pop
+	}ifelse
+}def
+/del_res
+{
+	{
+		aload pop exch
+		dup/CSD eq{
+			pop 
+			{//Adobe_AGM_Core/AGMCORE_CSD_cache get exch undef}forall
+		}{
+			exch
+			{1 index undefineresource}forall
+			pop
+		}ifelse
+	}forall
+}def
+/get_res
+{
+	dup/CSD eq{
+		pop
+		dup type dup/nametype eq exch/stringtype eq or{
+			AGMCORE_CSD_cache exch get
+		}if
+	}{
+		findresource
+	}ifelse
+}def
+end
+currentglobal true setglobal
+systemdict/languagelevel known dup
+	{currentglobal false setglobal}
+	{false}
+ifelse
+exch
+setglobal
+userdict/Adobe_AGM_Image 71 dict dup begin put
+/ds{}def
+/ps{}def
+/pt{}def
+/dt{}def
+currentdict Adobe_AGM_Utils eq {end} if
+Adobe_AGM_Utils begin
+3 3010 Adobe_AGM_Core/ds gx
+Adobe_AGM_Image/ds gx
+currentdict Adobe_AGM_Utils eq {end} if
+Adobe_AGM_Utils begin
+Adobe_AGM_Core/ps gx
+Adobe_AGM_Utils/capture_cpd gx
+Adobe_AGM_Image/ps gx
+-47 112 translate 0.25 -0.25 scale
+pgsv
+[1 0 0 1 0 0 ]ct
+gsave
+np
+gsave
+0 179.636 mo
+0 612.364 li
+612 612.364 li
+612 179.636 li
+cp
+clp
+[1 0 0 1 0 0 ]ct
+128.055 365.454 mo
+137.119 365.052 147.843 366.858 149.84 372.838 cv 153.115 382.638 136.517 396.929 122.054 403.943 cv 118.508 405.663 116.36 406.135 115.465 406.018 cv 114.61 405.906 114.478 405.11 114.755 404.561 cv 115.271 403.531 117.603 401.431 120.726 399.149 cv 137.007 387.258 142.3 378.536 139.226 375 cv 137.255 372.736 129.001 371.164 120.431 371.164 cv 118.104 371.164 111.99 371.668 111.362 369.654 cv 110.851 368.004 119.056 365.851 128.055 365.454 cv cp
+false sop
+/0 
+[/DeviceCMYK] /CSA add_res
+.8 .64 .5 .5 cmyk
+ef
+107.802 410.127 mo
+115.334 409.733 124.483 410.912 129.622 414.435 cv 132.177 416.185 133.974 419.408 132.933 423.101 cv 129.968 433.584 118.897 446.267 94.298 456.011 cv 86.4756 459.112 80.3254 460.296 79.0341 459.465 cv 77.6473 458.571 81.6806 451.655 82.8945 449.358 cv 86.8217 441.922 91.7285 434.682 96.5114 428.053 cv 98.273 425.613 100.992 421.383 103.455 421.722 cv 105.66 422.024 103.077 426.522 101.378 429.381 cv 98.5243 434.178 90.664 447.507 93.2572 448.301 cv 98.99 450.063 125.887 431.726 121.921 421.513 cv 120.082 416.772 108.404 416.32 101.049 416.32 cv 97.7037 416.32 90.3974 417.028 89.9931 414.733 cv 89.5565 412.615 101.093 410.482 107.802 410.127 cv cp
+ef
+166.519 397.746 mo
+171.077 398.49 174.792 399.066 175.645 400.805 cv 176.603 402.776 171.638 402.895 169.137 402.942 cv 157.145 403.152 149.915 403.365 149.553 407.047 cv 149.082 411.788 154.677 416.56 160.203 423.252 cv 165.25 429.36 170.989 435.386 169.335 441.009 cv 167.273 448.01 157.774 449.492 148.733 449.492 cv 140.069 449.5 131.863 448.244 128.416 447.625 cv 124.121 446.857 124.76 444.942 125.905 444.325 cv 127.183 443.635 134.483 443.619 139.557 443.347 cv 143.733 443.125 155.86 443.13 157.75 440.323 cv 160.069 436.886 154.393 431.002 149.18 424.843 cv 142.675 417.154 135.531 409.218 139.312 403.422 cv 144.205 395.923 158.519 396.437 166.519 397.746 cv cp
+ef
+128.055 365.834 mo
+137.119 365.434 147.438 366.858 149.436 372.838 cv 152.715 382.638 136.496 396.583 122.032 403.6 cv 118.487 405.321 116.698 405.818 115.542 405.749 cv 114.948 405.713 114.786 405.11 115.02 404.639 cv 115.537 403.604 117.603 401.887 120.726 399.609 cv 137.445 387.4 142.791 378.566 139.435 374.714 cv 137.465 372.45 129.001 370.838 120.431 370.838 cv 115.739 370.838 112.163 371.075 111.73 369.671 cv 111.28 368.225 118.996 366.236 128.055 365.834 cv cp
+level3{
+gsave
+[19.5396 0 0 19.5396 130.787 385.763 ]ct
+<<
+/PatternType 2
+/Shading
+/0 
+<<
+/ShadingType 3 
+/ColorSpace /0 /CSA get_res
+/Coords [0 0 0 0 0 1 ]
+/Domain [0 1 ]
+/Extend[ true true]
+/Function
+<<
+/Domain[0 1 ] 
+/FunctionType 3
+/Functions [
+<<
+/Domain[0 1 ] 
+/FunctionType 2
+/C0 [.4 .32 .25 .25 ]
+/C1 [.8 .64 .5 .5 ]
+/N 2.00702 
+>>
+]
+/Bounds []
+/Encode [0 1 ]
+>>
+>> /Gradient add_res /0 /Gradient get_res >> matrix makepattern grestore setpattern
+}if
+level3{
+ef
+}if
+166.901 398.15 mo
+171.355 398.877 174.675 399.526 175.32 400.845 cv 176.196 402.646 170.557 402.566 168.941 402.594 cv 156.939 402.804 149.548 403.155 149.17 406.99 cv 148.698 411.728 154.463 416.77 159.99 423.46 cv 165.149 429.706 170.608 435.61 169.069 440.855 cv 166.993 447.91 157.056 449.167 148.562 449.168 cv 140.069 449.173 132.296 448.005 128.681 447.356 cv 124.338 446.576 125.348 444.979 126.137 444.556 cv 127.416 443.866 134.483 444.005 139.557 443.731 cv 143.733 443.504 156.167 443.304 158.056 440.497 cv 160.425 436.979 154.756 430.953 149.39 424.611 cv 143.03 417.092 135.889 409.22 139.557 403.595 cv 144.452 396.098 158.9 396.84 166.901 398.15 cv cp
+level3{
+gsave
+[25.4614 0 0 25.4614 150.425 423.24 ]ct
+<<
+/PatternType 2
+/Shading
+/1 
+<<
+/ShadingType 3 
+/ColorSpace /0 /CSA get_res
+/Coords [0 0 0 0 0 1 ]
+/Domain [0 1 ]
+/Extend[ true true]
+/Function
+<<
+/Domain[0 1 ] 
+/FunctionType 3
+/Functions [
+<<
+/Domain[0 1 ] 
+/FunctionType 2
+/C0 [.4 .32 .25 .25 ]
+/C1 [.8 .64 .5 .5 ]
+/N 2.00702 
+>>
+<<
+/Domain[0 1 ] 
+/FunctionType 2
+/C0 [.75 .64 .5 .4 ]
+/C1 [.368 .2944 .23 .23 ]
+/N 1 
+>>
+]
+/Bounds [.668966 ]
+/Encode [0 1 0 1 ]
+>>
+>> /Gradient add_res /1 /Gradient get_res >> matrix makepattern grestore setpattern
+}if
+level3{
+ef
+}if
+107.802 410.473 mo
+115.334 410.076 124.294 411.199 129.432 414.722 cv 131.506 416.146 133.692 419.286 132.683 422.848 cv 129.718 433.333 118.897 445.862 94.298 455.61 cv 86.4788 458.708 80.4194 459.827 79.4355 459.198 cv 78.0498 458.306 82.081 451.655 83.2945 449.358 cv 87.2231 441.922 92.017 434.852 96.7993 428.225 cv 98.1559 426.348 101.216 421.722 103.321 422.011 cv 105.049 422.242 102.773 426.433 101.109 429.226 cv 98.4835 433.645 90.0041 447.662 93.0279 448.589 cv 99.3485 450.536 126.241 431.609 122.306 421.473 cv 120.367 416.479 108.501 415.976 101.049 415.973 cv 98.3589 415.973 90.664 416.642 90.3023 414.597 cv 90.0205 413.253 100.271 410.868 107.802 410.473 cv cp
+level3{
+gsave
+[25.7174 0 0 25.7174 106.043 434.882 ]ct
+<<
+/PatternType 2
+/Shading
+/2 
+<<
+/ShadingType 3 
+/ColorSpace /0 /CSA get_res
+/Coords [0 0 0 0 0 1 ]
+/Domain [0 1 ]
+/Extend[ true true]
+/Function
+<<
+/Domain[0 1 ] 
+/FunctionType 3
+/Functions [
+<<
+/Domain[0 1 ] 
+/FunctionType 2
+/C0 [.4 .32 .25 .4 ]
+/C1 [.75 .64 .5 .4 ]
+/N 2.00702 
+>>
+<<
+/Domain[0 1 ] 
+/FunctionType 2
+/C0 [.8 .64 .5 .5 ]
+/C1 [.368 .2944 .23 .23 ]
+/N 1 
+>>
+]
+/Bounds [.713793 ]
+/Encode [0 1 0 1 ]
+>>
+>> /Gradient add_res /2 /Gradient get_res >> matrix makepattern grestore setpattern
+}if
+level3{
+ef
+}if
+128.055 365.834 mo
+137.119 365.434 147.438 366.858 149.436 372.838 cv 152.715 382.638 136.496 396.583 122.032 403.6 cv 118.146 405.489 116.478 405.809 115.542 405.749 cv 115.02 405.716 115.167 405.218 115.494 404.882 cv 116.168 404.187 119.099 402.298 122.353 399.893 cv 139.021 387.553 146.353 377.939 142.977 374.063 cv 139.633 370.216 132.822 369.91 120.835 369.91 cv 117.169 369.91 111.909 370.257 111.73 369.671 cv 111.28 368.225 118.996 366.236 128.055 365.834 cv cp
+level3{
+gsave
+[25.0074 0 0 25.0074 125.967 379.938 ]ct
+<<
+/PatternType 2
+/Shading
+/3 
+<<
+/ShadingType 3 
+/ColorSpace /0 /CSA get_res
+/Coords [0 0 0 0 0 1 ]
+/Domain [0 1 ]
+/Extend[ true true]
+/Function
+<<
+/Domain[0 1 ] 
+/FunctionType 3
+/Functions [
+<<
+/Domain[0 1 ] 
+/FunctionType 2
+/C0 [0 0 0 0 ]
+/C1 [0 0 0 0 ]
+/N 1 
+>>
+<<
+/Domain[0 1 ] 
+/FunctionType 2
+/C0 [0 0 0 0 ]
+/C1 [.8 .64 .5 .5 ]
+/N 1.27507 
+>>
+]
+/Bounds [.4]
+/Encode [0 .5 0 .7 ]
+>>
+>> /Gradient add_res /3 /Gradient get_res >> matrix makepattern grestore setpattern
+}if
+level3{
+ef
+}if
+166.901 398.15 mo
+171.355 398.877 174.675 399.526 175.32 400.845 cv 175.899 402.029 173.557 401.811 167.041 401.807 cv 154.413 401.797 147.742 402.543 147.348 406.532 cv 146.877 411.272 152.652 415.69 158.489 422.116 cv 164.356 428.584 170.667 435.424 169.069 440.855 cv 166.993 447.91 157.056 449.167 148.562 449.168 cv 140.069 449.173 132.296 448.005 128.681 447.356 cv 126.539 446.972 125.697 446.39 125.493 445.841 cv 125.367 445.516 125.668 445.041 126.137 444.938 cv 127.556 444.625 134.574 444.681 139.863 444.74 cv 144.519 444.783 158.257 444.823 160.625 441.306 cv 163.1 437.636 156.251 430.848 150.549 424.83 cv 143.774 417.681 135.889 409.22 139.557 403.595 cv 144.452 396.098 158.9 396.84 166.901 398.15 cv cp
+level3{
+gsave
+[53.4042 0 0 53.4042 126.192 408.051 ]ct
+<<
+/PatternType 2
+/Shading
+/4 
+<<
+/ShadingType 3 
+/ColorSpace /0 /CSA get_res
+/Coords [0 0 0 0 0 1 ]
+/Domain [0 1 ]
+/Extend[ true true]
+/Function
+<<
+/Domain[0 1 ] 
+/FunctionType 3
+/Functions [
+<<
+/Domain[0 1 ] 
+/FunctionType 2
+/C0 [0 0 0 0 ]
+/C1 [0 0 0 0 ]
+/N 1 
+>>
+<<
+/Domain[0 1 ] 
+/FunctionType 2
+/C0 [0 0 0 0 ]
+/C1 [.6 .48 .375 .375 ]
+/N 1.27507 
+>>
+<<
+/Domain[0 1 ] 
+/FunctionType 2
+/C0 [.6 .48 .375 .375 ]
+/C1 [.48 .384 .3 .3 ]
+/N 1 
+>>
+]
+/Bounds [.465517 1 ]
+/Encode [0 .9 .0 .9 0 .9 ]
+>>
+>> /Gradient add_res /4 /Gradient get_res >> matrix makepattern grestore setpattern
+}if
+level3{
+ef
+}if
+107.802 410.473 mo
+115.334 410.076 124.294 411.199 129.432 414.722 cv 131.506 416.146 133.692 419.286 132.683 422.848 cv 129.718 433.333 118.897 445.862 94.298 455.61 cv 86.4788 458.708 80.4194 459.827 79.4355 459.198 cv 78.0498 458.306 82.081 451.655 83.2945 449.358 cv 87.2231 441.922 92.017 434.852 96.7993 428.225 cv 98.1559 426.348 101.216 421.722 103.321 422.011 cv 105.049 422.242 102.129 426.509 100.342 429.226 cv 95.765 436.193 87.6182 449.784 90.8297 450.954 cv 98.0022 453.57 129.773 432.389 125.345 420.989 cv 123.007 414.972 110.326 414.749 101.968 414.747 cv 96.7393 414.747 90.4886 415.671 90.3023 414.597 cv 90.0205 413.253 100.271 410.868 107.802 410.473 cv cp
+level3{
+gsave
+[57.7737 0 0 57.7737 112.686 404.451 ]ct
+<<
+/PatternType 2
+/Shading
+/5 
+<<
+/ShadingType 3 
+/ColorSpace /0 /CSA get_res
+/Coords [0 0 0 0 0 1 ]
+/Domain [0 1 ]
+/Extend[ true true]
+/Function
+<<
+/Domain[0 1 ] 
+/FunctionType 3
+/Functions [
+<<
+/Domain[0 1 ] 
+/FunctionType 2
+/C0 [0 0 0 0 ]
+/C1 [0 0 0 0 ]
+/N 1 
+>>
+<<
+/Domain[0 1 ] 
+/FunctionType 2
+/C0 [0 0 0 0 ]
+/C1 [.56 .448 .35 .35 ]
+/N 1.70951 
+>>
+<<
+/Domain[0 1 ] 
+/FunctionType 2
+/C0 [.56 .448 .35 .1 ]
+/C1 [.28 .224 .175 .09 ]
+/N 1.29435 
+>>
+<<
+/Domain[0 1 ] 
+/FunctionType 2
+/C0 [.28 .224 .175 .175 ]
+/C1 [.28 .224 .175 .175 ]
+/N 1 
+>>
+]
+/Bounds [.2241758 .637363 .752142 ]
+/Encode [0 .9 0 .9 .2 .8 0 .9 ]
+>>
+>> /Gradient add_res /5 /Gradient get_res >> matrix makepattern grestore setpattern
+}if
+level3{
+ef
+}if
+100.893 448.495 mo
+96.5384 450.619 92.7756 451.665 90.8297 450.954 cv 89.559 450.491 90.0705 448.081 91.4303 444.91 cv
+86.8117 443.161 li
+85.5832 445.198 84.4016 447.261 83.2945 449.358 cv 82.081 451.655 78.0498 458.306 79.4355 459.198 cv 80.4194 459.827 86.4788 458.708 94.298 455.61 cv 98.5329 453.934 102.349 452.17 105.798 450.35 cv
+100.893 448.495 li
+cp
+level3{
+gsave
+[6.8547 9.09649 -9.09649 6.8547 86.5877 446.801 ]ct
+<<
+/PatternType 2
+/Shading
+/6 
+<<
+/ShadingType 2 
+/ColorSpace /0 /CSA get_res
+/Coords [0 0 1 0 ]
+/Domain [0 1 ]
+/Extend[ true true]
+/Function
+<<
+/Domain[0 1 ] 
+/FunctionType 3
+/Functions [
+<<
+/Domain[0 1 ] 
+/FunctionType 2
+/C0 [.28 .224 .175 .175 ]
+/C1 [.28 .224 .175 .175 ]
+/N 1 
+>>
+<<
+/Domain[0 1 ] 
+/FunctionType 2
+/C0 [.28 .224 .175 .175 ]
+/C1 [.08 .064 .05 .05 ]
+/N 1.37378 
+>>
+<<
+/Domain[0 1 ] 
+/FunctionType 2
+/C0 [.08 .064 .05 .05 ]
+/C1 [.28 .224 .175 .175 ]
+/N 1.24773 
+>>
+<<
+/Domain[0 1 ] 
+/FunctionType 2
+/C0 [.28 .224 .175 .175 ]
+/C1 [.28 .224 .175 .175 ]
+/N 1 
+>>
+]
+/Bounds [.175824 .467033 .884615 ]
+/Encode [0 1 0 1 0 1 0 1 ]
+>>
+>> /Gradient add_res /6 /Gradient get_res >> matrix makepattern grestore setpattern
+}if
+level3{
+ef
+}if
+139.557 403.595 mo
+135.889 409.22 143.735 417.681 150.508 424.83 cv 156.21 430.848 163.078 437.614 160.607 441.287 cv 158.238 444.804 144.519 444.783 139.861 444.737 cv 134.574 444.681 127.556 444.625 126.134 444.938 cv 125.723 445.026 125.445 445.403 125.462 445.714 cv 125.446 445.413 125.723 445.085 126.134 444.992 cv 127.556 444.689 134.976 445.043 140.265 445.101 cv 145.26 445.154 158.662 445.482 161.375 441.457 cv 163.846 437.786 157.399 431.227 151.699 425.213 cv 145.04 418.189 135.772 409.401 139.557 403.595 cv cp
+level3{
+gsave
+clp
+[-12.6552 26.2549 -26.2549 -12.6552 148.802 425.961 ]ct
+/7 
+<<
+/ShadingType 2 
+/ColorSpace /0 /CSA get_res
+/Coords [0 0 1 0 ]
+/Domain [0 1 ]
+/Extend[ true true]
+/Function
+<<
+/Domain[0 1 ] 
+/FunctionType 3
+/Functions [
+<<
+/Domain[0 1 ] 
+/FunctionType 2
+/C0 [.35722 .285776 .223263 .250936 ]
+/C1 [0 0 0 .05 ]
+/N 1.30374 
+>>
+<<
+/Domain[0 1 ] 
+/FunctionType 2
+/C0 [0 0 0 .38 ]
+/C1 [0 0 0 .05 ]
+/N 1.77336 
+>>
+]
+/Bounds [.532967 ]
+/Encode [0 1 1 0 ]
+>>
+>>/Gradient add_res /7 /Gradient get_res clonedict shfill grestore
+}if
+np
+125.921 420.801 mo
+123.582 414.781 111.86 414.23 103.497 414.228 cv 98.5077 414.228 91.1797 415.542 90.3733 414.723 cv 91.0551 415.585 96.9743 414.783 101.966 414.783 cv 110.324 414.783 122.992 414.991 125.328 421.013 cv 129.755 432.403 98.0022 453.571 90.8297 450.954 cv 87.6182 449.784 95.765 436.234 100.342 429.265 cv 102.129 426.546 105.047 422.242 103.321 422.011 cv 105.047 422.242 101.17 427.275 99.3869 429.992 cv 95.1378 436.459 86.7177 449.375 90.2317 451.357 cv 97.0431 455.201 130.378 432.271 125.921 420.801 cv cp
+level3{
+gsave
+clp
+[44.6312 -20.257 20.257 44.6312 81.0335 438.537 ]ct
+/8 
+<<
+/ShadingType 2 
+/ColorSpace /0 /CSA get_res
+/Coords [0 0 1 0 ]
+/Domain [0 1 ]
+/Extend[ true true]
+/Function
+<<
+/Domain[0 1 ] 
+/FunctionType 3
+/Functions [
+<<
+/Domain[0 1 ] 
+/FunctionType 2
+/C0 [.5 .4 .32 .3 ]
+/C1 [.5 .4 .32 .3 ]
+/N 1 
+>>
+<<
+/Domain[0 1 ] 
+/FunctionType 2
+/C0 [.036363 .029091 .022727 .02 ]
+/C1 [.5 .4 .32 .3 ]
+/N 3.58787 
+>>
+<<
+/Domain[0 1 ] 
+/FunctionType 2
+/C0 [.036363 .029091 .022727 .02 ]
+/C1 [.6 .48 .38 .38 ]
+/N 1.39417 
+>>
+]
+/Bounds [.0604396 .472527 ]
+/Encode [0 1 1 0 0 1 ]
+>>
+>>/Gradient add_res /8 /Gradient get_res clonedict shfill grestore
+}if
+np
+175.32 400.845 mo
+175.96 402.164 172.258 401.612 166.545 401.461 cv 153.832 401.114 147.084 401.623 146.6 406.532 cv 146.128 411.272 152.652 416.267 158.489 422.693 cv 163.801 428.549 169.473 434.237 169.314 439.29 cv 169.483 434.147 163.823 427.975 158.503 422.116 cv 152.713 415.737 146.98 411.176 147.441 406.532 cv 147.834 402.594 154.469 401.837 167.041 401.842 cv 173.557 401.846 175.899 402.029 175.32 400.845 cv cp
+level3{
+gsave
+clp
+[-13.8331 61.7556 -61.7556 -13.8331 165.227 390.371 ]ct
+/9 
+<<
+/ShadingType 2 
+/ColorSpace /0 /CSA get_res
+/Coords [0 0 1 0 ]
+/Domain [0 1 ]
+/Extend[ true true]
+/Function
+<<
+/Domain[0 1 ] 
+/FunctionType 3
+/Functions [
+<<
+/Domain[0 1 ] 
+/FunctionType 2
+/C0 [.6 .48 .375 .375 ]
+/C1 [.6 .48 .375 .375 ]
+/N 1 
+>>
+<<
+/Domain[0 1 ] 
+/FunctionType 2
+/C0 [.077576 .062061 .048485 .048485 ]
+/C1 [.6 .48 .375 .375 ]
+/N 1.61729 
+>>
+<<
+/Domain[0 1 ] 
+/FunctionType 2
+/C0 [.077576 .062061 .048485 .048485 ]
+/C1 [.64 .512 .4 .4 ]
+/N 1 
+>>
+<<
+/Domain[0 1 ] 
+/FunctionType 2
+/C0 [.1584 .12672 .099 .099 ]
+/C1 [.64 .512 .4 .4 ]
+/N 1.61729 
+>>
+<<
+/Domain[0 1 ] 
+/FunctionType 2
+/C0 [.1584 .12672 .099 .099 ]
+/C1 [.64 .512 .4 .4 ]
+/N 1 
+>>
+]
+/Bounds [.104396 .395604 .725275 .884615 ]
+/Encode [0 1 1 0 0 1 1 0 0 1 ]
+>>
+>>/Gradient add_res /9 /Gradient get_res clonedict shfill grestore
+}if
+np
+142.918 374.081 mo
+146.292 377.958 139.021 387.552 122.348 399.893 cv 119.099 402.298 116.168 404.187 115.494 404.881 cv 116.168 404.187 119.453 402.563 122.734 400.199 cv 139.887 387.835 146.864 377.968 143.762 373.871 cv 141.022 370.251 134.055 369.277 121.909 369.565 cv 118.241 369.649 111.909 370.253 111.724 369.671 cv 111.909 370.253 117.167 369.967 120.835 369.967 cv 132.822 369.967 139.574 370.234 142.918 374.081 cv cp
+level3{
+gsave
+[47.2904 0 0 47.2904 124.057 369.785 ]ct
+<<
+/PatternType 2
+/Shading
+/10 
+<<
+/ShadingType 3 
+/ColorSpace /0 /CSA get_res
+/Coords [0 0 0 0 0 1 ]
+/Domain [0 1 ]
+/Extend[ true true]
+/Function
+<<
+/Domain[0 1 ] 
+/FunctionType 3
+/Functions [
+<<
+/Domain[0 1 ] 
+/FunctionType 2
+/C0 [0 0 0 0 ]
+/C1 [.6 .48 .375 .375 ]
+/N 1.46382 
+>>
+<<
+/Domain[0 1 ] 
+/FunctionType 2
+/C0 [0 0 0 0 ]
+/C1 [0 0 0 0 ]
+/N 1.27507 
+>>
+]
+/Bounds [.708791 ]
+/Encode [1 0 0 1 ]
+>>
+>> /Gradient add_res /10 /Gradient get_res >> matrix makepattern grestore setpattern
+}if
+level3{
+ef
+}if
+grestore
+pgrs
+[
+[/CSA [/0 ]]
+[/Gradient [/0 /1 /2 /3 /4 /5 /6 /7 /8 /9 
+/10 ]]
+] del_res
+%%%% SIMULIA test logo start here
+317.144 415.725 mo
+312.649 426.25 311.19 430.195 310.55 431.621 cv
+310.013 432.823 309.789 433.556 309.011 433.556 cv
+308.126 433.556 308.007 432.823 307.471 431.621 cv
+306.829 430.195 305.372 426.25 300.878 415.725 cv
+297.959 408.888 292.364 408.357 289.783 408.357 cv
+282.925 408.357 278.849 412.135 277.091 418.774 cv
+270.433 449.451 li
+270.436 449.452 li
+279.022 449.452 li
+281.025 449.446 282.163 448.417 282.592 446.364 cv
+282.592 446.364 287.505 422.599 288.006 420.433 cv
+288.505 418.268 288.952 416.12 290.576 416.12 cv
+292.165 416.12 292.605 417.501 293.88 420.795 cv
+294.339 421.983 295.439 424.735 297.995 431.365 cv
+300.548 437.988 303.146 441.899 309.008 441.899 cv
+314.922 441.899 317.474 437.988 320.026 431.365 cv
+322.584 424.735 323.683 421.983 324.142 420.795 cv
+325.414 417.501 325.855 416.12 327.444 416.12 cv
+329.068 416.12 329.516 418.268 330.016 420.433 cv
+330.515 422.599 335.428 446.364 335.428 446.364 cv
+335.857 448.417 336.995 449.446 338.996 449.452 cv
+347.587 449.452 li
+347.587 449.451 li
+340.927 418.774 li
+339.172 412.135 335.096 408.357 328.239 408.357 cv
+325.657 408.357 320.061 408.888 317.144 415.725 cv
+false sop
+/0 
+[/DeviceCMYK] /CSA add_res
+level3{
+gsave
+clp
+[338.626 54.0769 -54.0769 338.626 192.412 411.722 ]ct
+/0 
+<<
+/ShadingType 2 
+/ColorSpace /0 /CSA get_res
+/Coords [0 0 1 0 ]
+/Domain [0 1 ]
+/Extend[ true true]
+/Function
+<<
+/Domain[0 1 ] 
+/FunctionType 3
+/Functions [
+<<
+/Domain[0 1 ] 
+/FunctionType 2
+/C0 [.6 .5 .38 .38 ]
+/C1 [0 0 0 .5 ]
+/N 1.30492 
+>>
+]
+/Bounds []
+/Encode [1 0 ]
+>>
+>>/Gradient add_res /0 /Gradient get_res clonedict shfill grestore
+}if
+np
+gsave
+317.144 415.725 mo
+312.649 426.25 311.19 430.195 310.55 431.621 310.013 432.823 309.789 433.556 309.011 433.556 308.126 433.556 308.007 432.823 307.471 431.621 306.829 430.195 305.372 426.25 300.878 415.725 297.959 408.888 292.364 408.357 289.783 408.357 282.925 408.357 278.849 412.135 277.091 418.774 270.433 449.451 li 270.436 449.452 li 279.022 449.452 li 281.025 449.446 282.163 448.417 282.592 446.364 282.592 446.364 287.505 422.599 288.006 420.433 288.505 418.268 288.952 416.12 290.576 416.12 292.165 416.12 292.605 417.501 293.88 420.795 294.339 421.983 295.439 424.735 297.995 431.365 300.548 437.988 303.146 441.899 309.008 441.899 314.922 441.899 317.474 437.988 320.026 431.365 322.584 424.735 323.683 421.983 324.142 420.795 325.414 417.501 325.855 416.12 327.444 416.12 329.068 416.12 329.516 418.268 330.016 420.433 330.515 422.599 335.428 446.364 335.428 446.364 335.857 448.417 336.995 449.446 338.996 449.452 347.587 449.452 li 347.587 449.451 li 340.927 418.774 li 339.172 412.135 335.096 408.357 328.239 408.357 325.657 408.357 320.061 408.888 317.144 415.725 clp
+grestore
+481.965 427.726 mo 477.735 447.687 li 477.456 449.029 478.298 449.452 479.429 449.452 cv 487.61 449.452 li 489.797 439.15 li 515.191 439.15 li 513.003 449.452 li 521.184 449.452 li 522.316 449.452 523.301 449.029 523.586 447.687 cv 527.819 427.726 li 530.707 414.041 523.02 409.106 508.839 409.106 cv 494.667 409.106 484.861 414.041 481.965 427.726 cv 492.481 426.527 mo 493.958 419.404 498.543 416.158 507.359 416.158 cv 516.179 416.158 519.352 419.404 517.87 426.527 cv 516.531 432.806 li 491.138 432.806 li 492.481 426.527 li cp
+level3{
+gsave
+clp
+[338.623 54.0765 -54.0765 338.623 197.23 381.581 ]ct
+/0 /Gradient get_res clonedict shfill grestore
+}if
+np
+gsave
+481.965 427.726 mo
+477.735 447.687 li 477.456 449.029 478.298 449.452 479.429 449.452 cv 487.61 449.452 li 489.797 439.15 li 515.191 439.15 li 513.003 449.452 li 521.184 449.452 li 522.316 449.452 523.301 449.029 523.586 447.687 cv 527.819 427.726 li 530.707 414.041 523.02 409.106 508.839 409.106 cv 494.667 409.106 484.861 414.041 481.965 427.726 cv 492.481 426.527 mo 493.958 419.404 498.543 416.158 507.359 416.158 cv 516.179 416.158 519.352 419.404 517.87 426.527 cv 516.531 432.806 li 491.138 432.806 li 492.481 426.527 li cp
+clp
+grestore
+255.728 409.952 mo
+247.335 449.451 li 247.337 449.452 li 257.564 449.452 li 265.604 411.291 li
+265.742 410.655 265.254 409.952 264.337 409.952 cv 255.728 409.952 li cp
+level3{
+gsave
+clp
+[338.613 54.0748 -54.0748 338.613 191.193 419.368 ]ct
+/0 /Gradient get_res clonedict shfill grestore
+}if
+np
+gsave
+255.728 409.952 mo
+247.335 449.451 li 247.337 449.452 li 257.564 449.452 li 265.604 411.291 li 265.742 410.655 265.254 409.952 264.337 409.952 cv 255.728 409.952 li cp clp
+grestore
+463.452 409.952 mo
+455.058 449.451 li 455.06 449.452 li 465.287 449.452 li 473.326 411.291 li 473.466 410.655 472.975 409.952 472.058 409.952 cv 463.452 409.952 li cp
+level3{
+gsave
+clp
+[338.616 54.0754 -54.0754 338.616 196.365 387.022 ]ct
+/0 /Gradient get_res clonedict shfill grestore
+}if
+np
+gsave
+463.452 409.952 mo
+455.058 449.451 li 455.06 449.452 li 465.287 449.452 li 473.326 411.291 li 473.466 410.655 472.975 409.952 472.058 409.952 cv 463.452 409.952 li cp
+clp
+grestore
+418.689 409.929 mo
+410.284 449.451 li 410.287 449.452 li 446.851 449.452 li 447.639 445.756 li 448.005 444.02 447.352 443.35 445.608 443.35 cv 422.426 443.35 li 429.248 411.269 li 429.389 410.597 428.86 409.929 427.928 409.929 cv 418.689 409.929 li cp
+level3{
+gsave
+clp
+[338.643 54.0797 -54.0797 338.643 195.242 393.929 ]ct
+/0 /Gradient get_res clonedict shfill grestore
+}if
+np
+gsave
+418.689 409.929 mo
+410.284 449.451 li 410.287 449.452 li 446.851 449.452 li 447.639 445.756 li
+448.005 444.02 447.352 443.35 445.608 443.35 cv 422.426 443.35 li 429.248 411.269 li 429.389 410.597 428.86 409.929 427.928 409.929 cv 418.689 409.929 li cp
+clp
+grestore
+395.482 409.965 mo
+393.113 421.532 li 391.75 427.677 li 390.622 433.032 li 389.032 440.314 383.884 443.597 375.144 443.597 cv 365.536 443.597 362.962 440.393 364.467 433.032 cv 364.467 433.032 364.842 431.191 364.962 430.634 cv 366.957 421.532 li 369.333 409.965 li 360.702 409.965 li 359.59 409.965 358.531 410.369 358.241 411.716 cv 354.006 431.814 li 351.112 445.983 358.81 450.295 374.052 450.295 cv 391.889 450.295 398.765 444.722 401.589 431.814 cv 405.824 411.716 li 406.105 410.369 405.225 409.965 404.105 409.965 cv 395.482 409.965 li cp
+level3{
+gsave
+clp
+[338.629 54.0775 -54.0775 338.629 194.38 399.388 ]ct
+/0 /Gradient get_res clonedict shfill grestore
+}if
+np
+gsave
+395.482 409.965 mo
+393.113 421.532 li
+391.75 427.677 li
+390.622 433.032 li
+389.032 440.314 383.884 443.597 375.144 443.597 cv
+365.536 443.597 362.962 440.393 364.467 433.032 cv
+364.467 433.032 364.842 431.191 364.962 430.634 cv
+366.957 421.532 li
+369.333 409.965 li
+360.702 409.965 li
+359.59 409.965 358.531 410.369 358.241 411.716 cv
+354.006 431.814 li
+351.112 445.983 358.81 450.295 374.052 450.295 cv
+391.889 450.295 398.765 444.722 401.589 431.814 cv
+405.824 411.716 li
+406.105 410.369 405.225 409.965 404.105 409.965 cv
+395.482 409.965 li
+cp
+clp
+grestore
+221.004 409.943 mo
+209.631 409.943 202.808 410.004 201.072 417.475 cv
+199.789 423.012 204.53 425.692 214.153 431.161 cv
+224.692 437.142 227.094 437.597 226.124 440.743 cv
+225.342 443.276 222.581 443.387 217.843 443.387 cv
+199.087 443.387 li
+196.952 443.387 195.714 444.189 195.342 445.927 cv
+194.598 449.451 li
+194.599 449.452 li
+218.245 449.452 li
+229.071 449.452 235.86 448.839 238.32 442.783 cv
+239.519 439.826 239.511 436.778 236.586 433.768 cv
+235.092 432.232 232.902 430.882 229.864 429.316 cv
+216.347 422.329 212.82 421.525 213.672 418.137 cv
+214.153 416.237 215.595 416.158 220.679 416.158 cv
+236.54 416.158 li
+238.673 416.158 239.915 415.359 240.279 413.62 cv
+241.067 409.943 li
+241.066 409.943 li
+221.004 409.943 li
+cp
+level3{
+gsave
+clp
+[338.634 54.0782 -54.0782 338.634 190.243 425.291 ]ct
+/0 /Gradient get_res clonedict shfill grestore
+}if
+np
+gsave
+221.004 409.943 mo
+209.631 409.943 202.808 410.004 201.072 417.475 199.789 423.012 204.53 425.692 214.153 431.161 224.692 437.142 227.094 437.597 226.124 440.743 225.342 443.276 222.581 443.387 217.843 443.387 cv 199.087 443.387 li 196.952 443.387 195.714 444.189 195.342 445.927 cv 194.598 449.451 li 194.599 449.452 li 218.245 449.452 li 229.071 449.452 235.86 448.839 238.32 442.783 239.519 439.826 239.511 436.778 236.586 433.768 235.092 432.232 232.902 430.882 229.864 429.316 216.347 422.329 212.82 421.525 213.672 418.137 214.153 416.237 215.595 416.158 220.679 416.158 cv 236.54 416.158 li 238.673 416.158 239.915 415.359 240.279 413.62 cv 241.067 409.943 li 241.066 409.943 li 221.004 409.943 li cp
+clp
+grestore
+grestore
+[
+[/CSA [/0 ]]
+[/Gradient [/0 ]]
+] del_res
+currentdict Adobe_AGM_Utils eq {end} if
+showpage
+%%Trailer
+%%EOF
+%%EndDocument
+EndEPSF
+% End of Logo import
+
+grestore
+
+
+gsave
+%%BeginDocument: Date
+0.00 0.00 0.46 setrgbcolor
+
+(Printed using Abaqus/CAE on: Wed Dec 18 16:45:09 Paris, Madrid 2019) 35.10 548.18 /Helvetica-Bold findfont dup length dict begin { 1 index /FID ne {def} {pop pop} ifelse}
+ forall /Encoding ISOLatin1Encoding def currentdict end /Helvetica-Bold-ISOLatin1 exch definefont pop
+/Helvetica-Bold-ISOLatin1 findfont [10.00 0 0 10.00 0 0] makefont setfont moveto show
+%EndDocument
+
+grestore
+
+
+gsave
+% Start Clipping
+gsave
+newpath
+36.00 222.63 m
+36.00 539.68 l
+576.00 539.68 l
+576.00 222.63 l
+closepath clip
+36.000000 222.626129 translate
+BeginEPSF
+
+%%BeginDocument: (Viewport Vector Image)
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: 0 0 541 318
+%%Creator: Abaqus/CAE
+%%Version: 6.14-2
+%%LanguageLevel: 2
+%%DocumentData: Clean8Bit
+%%Title: C:/Users/abdu0003/Documents/abaqus/Projet/part_pot.ps
+%%Pages: 0
+%%For: abdu0003
+%%DocumentSuppliedResources: procset hksDrawingMacros 1.0 1
+%%EndComments
+%%BeginProlog
+%%BeginResource: procset hksDrawingMacros 1.0 1
+/m {moveto} bind def /l {lineto} bind def /ls {lineto stroke} bind def
+/SMS {setfont moveto show} bind def /MS {moveto show} bind def
+%%EndResource
+%%EndProlog
+gsave
+0.450000 0.450000 scale
+1.00 1.00 1.00 setrgbcolor
+0.0 0.0 1201.00 705.00 rectfill
+0.69 0.69 0.69 setrgbcolor
+newpath
+794.68 404.57 m
+819.93 410.32 l
+797.80 419.28 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+[] 0 setdash
+0.48 setlinewidth
+0.00 0.00 0.00 setrgbcolor
+819.93 410.32 m
+794.68 404.57 l
+stroke
+0.69 0.69 0.69 setrgbcolor
+newpath
+502.41 550.66 m
+514.46 528.40 l
+525.35 537.32 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+502.41 550.66 m
+525.35 537.32 l
+519.56 556.79 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+514.46 528.40 m
+502.41 550.66 l
+stroke
+0.69 0.69 0.69 setrgbcolor
+newpath
+819.93 410.32 m
+815.78 428.48 l
+797.80 419.28 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+819.93 410.32 m
+838.50 421.18 l
+815.78 428.48 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+838.50 421.18 m
+819.93 410.32 l
+stroke
+0.69 0.69 0.69 setrgbcolor
+newpath
+498.76 571.39 m
+502.41 550.66 l
+519.56 556.79 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+498.76 571.39 m
+519.56 556.79 l
+522.37 573.91 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+502.41 550.66 m
+498.76 571.39 l
+stroke
+0.69 0.69 0.69 setrgbcolor
+newpath
+838.50 421.18 m
+826.11 442.37 l
+815.78 428.48 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+504.38 589.35 m
+498.76 571.39 l
+522.37 573.91 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+519.56 556.79 m
+522.36 573.85 l
+stroke
+% the gouraudtriangle PostScript fragement below is free
+% written by Frederic Delhoume (delhoume@ilog.fr)
+/threshold 0.065 def
+/bd{bind def}bind def
+/triangle { aload pop   setrgbcolor  aload pop 5 3 roll 4 2 roll 3 2 roll exch
+moveto lineto lineto closepath gsave 1 setlinewidth stroke grestore fill } bd
+/computediff1 { 2 copy sub abs threshold ge {pop pop pop true} {
+exch 2 index sub abs threshold ge { pop pop true} { sub abs threshold ge
+} ifelse } ifelse } bd
+/computediff3 { 3 copy 0 get 3 1 roll 0 get 3 1 roll 0 get computediff1 {true}
+{ 3 copy 1 get 3 1 roll 1 get 3 1 roll 1 get computediff1 {true} {
+3 copy 2 get 3 1 roll  2 get 3 1 roll 2 get computediff1 } ifelse } ifelse } bd
+/middlecolor { aload pop 4 -1 roll aload pop 4 -1 roll add 2 div 5 1 roll
+3 -1 roll add 2 div 3 1 roll add 2 div 3 1 roll exch 3 array astore } bd
+/gouraudtriangle { computediff3 { 4 -1 roll aload 7 1 roll
+6 -1 roll pop 3 -1 roll pop add 2 div 3 1 roll add 2 div exch
+3 -1 roll aload 7 1 roll exch pop 4 -1 roll pop add 2 div 3 1 roll add 2 div exch
+3 -1 roll aload 7 1 roll pop 3 -1 roll pop add 2 div 3 1 roll add 2 div exch 7 3 roll
+10 -3 roll dup 3 index middlecolor 4 1 roll 2 copy middlecolor
+4 1 roll 3 copy pop middlecolor 4 1 roll 13 -1 roll aload pop
+17 index 6 index 15 index 19 index 6 index 17 index 6 array astore
+10 index 10 index 14 index gouraudtriangle
+17 index 5 index 17 index 19 index 5 index 19 index 6 array astore
+10 index 9 index 13 index gouraudtriangle
+13 index 16 index 5 index 15 index 18 index 5 index 6 array astore 
+12 index 12 index 9 index gouraudtriangle
+17 index 16 index 15 index 19 index 18 index 17 index 6 array astore
+10 index 12 index 14 index gouraudtriangle 18 {pop} repeat } {
+aload pop 5 3 roll aload pop 7 3 roll aload pop 9 3 roll
+8 index 6 index 4 index add add 3 div
+10 1 roll 7 index 5 index 3 index add add 3 div
+10 1 roll 6 index 4 index 2 index add add 3 div
+10 1 roll 9 {pop} repeat 3 array astore triangle } ifelse } bd
+
+2 setlinejoin
+0 setlinecap
+0.50 setlinewidth
+[498.73 518.93 503.00 146.84 137.85 142.46] [0.80 0.80 0.80] [0.84 0.84 0.84] [0.81 0.81 0.81] gouraudtriangle
+[518.93 539.27 525.50 137.85 129.53 132.70] [0.84 0.84 0.84] [0.88 0.88 0.88] [0.84 0.84 0.84] gouraudtriangle
+[518.93 525.50 503.00 137.85 132.70 142.46] [0.84 0.84 0.84] [0.84 0.84 0.84] [0.81 0.81 0.81] gouraudtriangle
+[815.78 826.11 731.34 428.48 442.37 201.05] [0.93 0.93 0.93] [0.89 0.89 0.89] [0.91 0.91 0.91] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+815.78 428.48 m
+826.07 442.32 l
+stroke
+[498.73 503.00 481.14 146.84 142.46 152.87] [0.80 0.80 0.80] [0.81 0.81 0.81] [0.76 0.76 0.76] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+503.00 142.46 m
+525.50 132.70 l
+516.74 143.04 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+[539.27 547.96 525.50 129.53 123.87 132.70] [0.88 0.88 0.88] [0.87 0.87 0.87] [0.84 0.84 0.84] gouraudtriangle
+[516.74 535.60 507.70 143.04 142.68 154.59] [0.78 0.78 0.78] [0.84 0.84 0.84] [0.75 0.75 0.75] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+525.50 132.70 m
+544.82 131.87 l
+516.74 143.04 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+525.50 132.70 m
+503.00 142.46 l
+stroke
+[479.17 498.73 481.14 156.30 146.84 152.87] [0.75 0.75 0.75] [0.80 0.80 0.80] [0.76 0.76 0.76] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+481.14 152.87 m
+503.00 142.46 l
+489.25 155.92 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+503.00 142.46 m
+516.74 143.04 l
+489.25 155.92 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+503.00 142.46 m
+481.14 152.87 l
+stroke
+[539.27 559.29 547.96 129.53 122.09 123.87] [0.88 0.88 0.88] [0.90 0.90 0.90] [0.87 0.87 0.87] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+525.50 132.70 m
+547.96 123.87 l
+544.82 131.87 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+[559.29 569.73 547.96 122.09 116.24 123.87] [0.90 0.90 0.90] [0.89 0.89 0.89] [0.87 0.87 0.87] gouraudtriangle
+[559.29 578.52 569.73 122.09 115.70 116.24] [0.90 0.90 0.90] [0.91 0.91 0.91] [0.89 0.89 0.89] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+544.82 131.87 m
+547.96 123.87 l
+569.73 116.24 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+547.96 123.87 m
+525.50 132.70 l
+stroke
+[479.17 481.14 460.55 156.30 152.87 163.61] [0.75 0.75 0.75] [0.76 0.76 0.76] [0.69 0.69 0.69] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+838.50 421.18 m
+848.88 436.99 l
+826.11 442.37 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+848.88 436.99 m
+838.50 421.18 l
+stroke
+[460.69 479.17 460.55 166.01 156.30 163.61] [0.70 0.70 0.70] [0.75 0.75 0.75] [0.69 0.69 0.69] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+481.14 152.87 m
+489.25 155.92 l
+460.55 163.61 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+[489.25 507.70 481.62 155.92 154.59 167.80] [0.73 0.73 0.73] [0.75 0.75 0.75] [0.70 0.70 0.70] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+489.25 155.92 m
+476.52 162.65 l
+460.55 163.61 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+[460.69 460.55 443.75 166.01 163.61 175.75] [0.70 0.70 0.70] [0.69 0.69 0.69] [0.64 0.64 0.64] gouraudtriangle
+[481.62 460.09 464.86 167.80 180.98 169.36] [0.70 0.70 0.70] [0.64 0.64 0.64] [0.66 0.66 0.66] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+476.52 162.65 m
+464.86 169.36 l
+460.55 163.61 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+481.14 152.87 m
+460.55 163.61 l
+stroke
+498.76 571.39 m
+504.38 589.35 l
+stroke
+[570.95 585.56 562.50 123.45 127.46 133.30] [1.00 1.00 1.00] [0.94 0.94 0.94] [1.00 1.00 1.00] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+570.95 123.45 m
+544.82 131.87 l
+569.73 116.24 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+569.73 116.24 m
+547.96 123.87 l
+stroke
+[578.52 590.11 569.73 115.70 110.07 116.24] [0.91 0.91 0.91] [0.89 0.89 0.89] [0.89 0.89 0.89] gouraudtriangle
+[443.75 460.55 441.90 175.75 163.61 174.38] [0.64 0.64 0.64] [0.69 0.69 0.69] [0.62 0.62 0.62] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+464.86 169.36 m
+441.90 174.38 l
+460.55 163.61 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+[443.75 441.90 428.81 175.75 174.38 185.27] [0.64 0.64 0.64] [0.62 0.62 0.62] [0.61 0.61 0.61] gouraudtriangle
+[428.81 441.90 425.80 185.27 174.38 184.83] [0.61 0.61 0.61] [0.62 0.62 0.62] [0.59 0.59 0.59] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+425.80 184.83 m
+441.90 174.38 l
+464.86 169.36 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+460.55 163.61 m
+441.90 174.38 l
+stroke
+[578.52 596.46 590.11 115.70 110.55 110.07] [0.91 0.91 0.91] [0.90 0.90 0.90] [0.89 0.89 0.89] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+590.11 110.07 m
+570.95 123.45 l
+569.73 116.24 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+[596.46 608.44 590.11 110.55 105.59 110.07] [0.90 0.90 0.90] [0.88 0.88 0.88] [0.89 0.89 0.89] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+590.11 110.07 m
+608.44 105.59 l
+570.95 123.45 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+590.11 110.07 m
+569.73 116.24 l
+stroke
+0.69 0.69 0.69 setrgbcolor
+newpath
+504.38 589.35 m
+522.37 573.91 l
+534.28 587.47 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+848.88 436.99 m
+827.60 460.48 l
+826.11 442.37 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+[445.57 445.91 460.09 192.70 182.12 180.98] [0.57 0.57 0.57] [0.60 0.60 0.60] [0.64 0.64 0.64] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+425.80 184.83 m
+464.86 169.36 l
+445.91 182.12 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+[428.81 425.80 416.30 185.27 184.83 194.32] [0.61 0.61 0.61] [0.59 0.59 0.59] [0.58 0.58 0.58] gouraudtriangle
+[416.30 412.88 406.63 194.32 194.61 202.66] [0.58 0.58 0.58] [0.56 0.56 0.56] [0.55 0.55 0.55] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+412.88 194.61 m
+425.80 184.83 l
+445.91 182.12 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+441.90 174.38 m
+425.80 184.83 l
+stroke
+[418.09 534.28 522.37 351.01 587.47 573.91] [0.97 0.97 0.97] [0.99 0.99 0.99] [0.93 0.93 0.93] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+522.37 573.91 m
+534.16 587.33 l
+stroke
+[489.25 516.74 507.70 155.92 143.04 154.59] [0.73 0.73 0.73] [0.78 0.78 0.78] [0.75 0.75 0.75] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+516.74 143.04 m
+489.25 155.92 l
+stroke
+[516.74 544.82 535.60 143.04 131.87 142.68] [0.78 0.78 0.78] [1.00 1.00 1.00] [0.84 0.84 0.84] gouraudtriangle
+[544.82 562.50 535.60 131.87 133.30 142.68] [1.00 1.00 1.00] [1.00 1.00 1.00] [0.84 0.84 0.84] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+544.82 131.87 m
+516.74 143.04 l
+stroke
+[592.63 602.13 585.56 118.64 125.95 127.46] [0.92 0.92 0.92] [0.88 0.88 0.88] [0.94 0.94 0.94] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+608.44 105.59 m
+592.63 118.64 l
+570.95 123.45 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+608.44 105.59 m
+624.04 103.00 l
+592.63 118.64 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+608.44 105.59 m
+590.11 110.07 l
+stroke
+[815.78 731.34 723.95 428.48 201.05 195.56] [0.93 0.93 0.93] [0.91 0.91 0.91] [0.93 0.93 0.93] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+849.79 457.27 m
+819.46 481.94 l
+827.60 460.48 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+[734.00 826.11 827.60 208.87 442.37 460.48] [0.52 0.52 0.52] [0.49 0.49 0.49] [0.55 0.55 0.55] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+826.11 442.37 m
+827.58 460.29 l
+stroke
+0.69 0.69 0.69 setrgbcolor
+newpath
+507.70 154.59 m
+535.60 142.68 l
+524.78 165.47 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+524.78 165.47 m
+535.60 142.68 l
+562.50 133.30 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+535.60 142.68 m
+507.70 154.59 l
+stroke
+[476.52 489.25 481.62 162.65 155.92 167.80] [0.70 0.70 0.70] [0.73 0.73 0.73] [0.70 0.70 0.70] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+489.25 155.92 m
+476.52 162.65 l
+stroke
+0.69 0.69 0.69 setrgbcolor
+newpath
+507.70 154.59 m
+524.78 165.47 l
+481.62 167.80 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+524.78 165.47 m
+460.09 180.98 l
+481.62 167.80 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+507.70 154.59 m
+481.62 167.80 l
+stroke
+0.69 0.69 0.69 setrgbcolor
+newpath
+585.56 127.46 m
+524.78 165.47 l
+562.50 133.30 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+562.50 133.30 m
+535.60 142.68 l
+stroke
+1.00 1.00 1.00 setrgbcolor
+newpath
+544.82 131.87 m
+570.95 123.45 l
+562.50 133.30 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+570.95 123.45 m
+544.82 131.87 l
+stroke
+[476.52 481.62 464.86 162.65 167.80 169.36] [0.70 0.70 0.70] [0.70 0.70 0.70] [0.66 0.66 0.66] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+476.52 162.65 m
+464.86 169.36 l
+stroke
+0.69 0.69 0.69 setrgbcolor
+newpath
+848.88 436.99 m
+849.79 457.27 l
+827.60 460.48 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+849.79 457.27 m
+848.88 436.99 l
+stroke
+0.69 0.69 0.69 setrgbcolor
+newpath
+519.74 603.29 m
+504.38 589.35 l
+534.28 587.47 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+504.38 589.35 m
+519.74 603.29 l
+stroke
+[434.49 445.57 440.05 192.93 192.70 201.57] [0.53 0.53 0.53] [0.57 0.57 0.57] [0.51 0.51 0.51] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+412.88 194.61 m
+445.91 182.12 l
+434.49 192.93 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+403.69 203.37 m
+412.88 194.61 l
+434.49 192.93 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+425.80 184.83 m
+412.88 194.61 l
+stroke
+[460.09 445.91 464.86 180.98 182.12 169.36] [0.64 0.64 0.64] [0.60 0.60 0.60] [0.66 0.66 0.66] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+445.57 192.70 m
+460.09 180.98 l
+524.78 165.47 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+481.62 167.80 m
+460.09 180.98 l
+stroke
+[607.52 609.98 602.13 118.07 129.16 125.95] [0.88 0.88 0.88] [0.85 0.85 0.85] [0.88 0.88 0.88] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+624.04 103.00 m
+607.52 118.07 l
+592.63 118.64 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+624.04 103.00 m
+636.28 102.47 l
+607.52 118.07 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+624.04 103.00 m
+608.44 105.59 l
+stroke
+0.69 0.69 0.69 setrgbcolor
+newpath
+585.56 127.46 m
+602.13 125.95 l
+524.78 165.47 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+585.56 127.46 m
+562.50 133.30 l
+stroke
+464.86 169.36 m
+445.91 182.12 l
+stroke
+[570.95 592.63 585.56 123.45 118.64 127.46] [1.00 1.00 1.00] [0.92 0.92 0.92] [0.94 0.94 0.94] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+592.63 118.64 m
+570.95 123.45 l
+stroke
+826.11 442.37 m
+826.11 442.37 l
+stroke
+[418.09 522.37 411.70 351.01 573.91 344.79] [0.97 0.97 0.97] [0.93 0.93 0.93] [0.93 0.93 0.93] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+522.37 573.91 m
+522.37 573.91 l
+stroke
+0.69 0.69 0.69 setrgbcolor
+newpath
+519.74 603.29 m
+534.28 587.47 l
+555.20 596.32 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+[555.20 534.28 426.23 596.32 587.47 354.13] [1.00 1.00 1.00] [0.99 0.99 0.99] [1.00 1.00 1.00] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+534.28 587.47 m
+554.87 596.19 l
+stroke
+0.69 0.69 0.69 setrgbcolor
+newpath
+849.79 457.27 m
+840.36 481.15 l
+819.46 481.94 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+840.36 481.15 m
+801.59 505.50 l
+819.46 481.94 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+[827.60 819.46 723.79 460.48 481.94 230.95] [0.55 0.55 0.55] [0.60 0.60 0.60] [0.59 0.59 0.59] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+819.46 481.94 m
+827.60 460.48 l
+stroke
+[397.26 400.18 398.72 216.17 210.03 210.75] [0.48 0.48 0.48] [0.52 0.52 0.52] [0.49 0.49 0.49] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+403.69 203.37 m
+434.49 192.93 l
+398.72 210.75 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+412.88 194.61 m
+403.69 203.37 l
+stroke
+[434.49 445.91 445.57 192.93 182.12 192.70] [0.53 0.53 0.53] [0.60 0.60 0.60] [0.57 0.57 0.57] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+445.57 192.70 m
+524.78 165.47 l
+440.05 201.57 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+460.09 180.98 m
+445.57 192.70 l
+stroke
+[710.65 723.95 731.34 168.49 195.56 201.05] [0.91 0.91 0.91] [0.93 0.93 0.93] [0.90 0.90 0.90] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+607.52 118.07 m
+636.28 102.47 l
+644.56 104.12 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+636.28 102.47 m
+624.04 103.00 l
+stroke
+[710.65 731.34 717.73 168.49 201.05 173.41] [0.91 0.91 0.91] [0.90 0.90 0.90] [0.88 0.88 0.88] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+731.34 201.05 m
+723.95 195.56 l
+stroke
+0.69 0.69 0.69 setrgbcolor
+newpath
+524.78 165.47 m
+602.13 125.95 l
+609.98 129.16 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+602.13 125.95 m
+585.56 127.46 l
+stroke
+445.91 182.12 m
+434.49 192.93 l
+stroke
+840.36 481.15 m
+849.79 457.27 l
+stroke
+[592.63 607.52 602.13 118.64 118.07 125.95] [0.92 0.92 0.92] [0.88 0.88 0.88] [0.88 0.88 0.88] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+607.52 118.07 m
+592.63 118.64 l
+stroke
+0.69 0.69 0.69 setrgbcolor
+newpath
+544.70 611.99 m
+519.74 603.29 l
+555.20 596.32 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+519.74 603.29 m
+544.70 611.99 l
+stroke
+[397.07 392.73 393.51 269.53 247.09 278.01] [0.52 0.52 0.52] [0.48 0.48 0.48] [0.48 0.48 0.48] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+410.33 336.52 m
+411.69 344.74 l
+stroke
+[432.17 440.05 444.70 200.56 201.57 206.38] [0.49 0.49 0.49] [0.51 0.51 0.51] [0.51 0.51 0.51] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+434.49 192.93 m
+432.17 200.56 l
+398.72 210.75 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+432.17 200.56 m
+398.37 216.41 l
+398.72 210.75 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+403.69 203.37 m
+398.72 210.75 l
+stroke
+[426.23 534.28 418.09 354.13 587.47 351.01] [1.00 1.00 1.00] [0.99 0.99 0.99] [0.97 0.97 0.97] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+534.28 587.47 m
+534.28 587.47 l
+stroke
+[692.96 717.73 699.44 143.95 173.41 148.23] [0.87 0.87 0.87] [0.88 0.88 0.88] [0.84 0.84 0.84] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+644.56 104.12 m
+636.28 102.47 l
+stroke
+[396.07 397.26 392.73 239.71 216.17 247.09] [0.52 0.52 0.52] [0.48 0.48 0.48] [0.48 0.48 0.48] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+524.78 165.47 m
+444.70 206.38 l
+440.05 201.57 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+445.57 192.70 m
+440.05 201.57 l
+stroke
+0.69 0.69 0.69 setrgbcolor
+newpath
+544.70 611.99 m
+555.20 596.32 l
+584.33 599.53 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+578.33 614.49 m
+584.33 599.53 l
+620.06 596.51 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+1.00 1.00 1.00 setrgbcolor
+newpath
+450.93 355.90 m
+584.33 599.53 l
+555.20 596.32 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+555.20 596.32 m
+583.75 599.47 l
+stroke
+0.69 0.69 0.69 setrgbcolor
+newpath
+840.36 481.15 m
+820.45 507.32 l
+801.59 505.50 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+[819.46 801.59 710.71 481.94 505.50 244.65] [0.60 0.60 0.60] [0.64 0.64 0.64] [0.62 0.62 0.62] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+801.59 505.50 m
+819.46 481.94 l
+stroke
+[717.73 734.00 720.10 173.41 208.87 180.64] [0.47 0.47 0.47] [0.51 0.51 0.51] [0.51 0.51 0.51] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+731.34 201.05 m
+733.97 208.78 l
+stroke
+[734.00 827.60 731.55 208.87 460.48 218.91] [0.52 0.52 0.52] [0.55 0.55 0.55] [0.56 0.56 0.56] gouraudtriangle
+[827.60 723.79 731.55 460.48 230.95 218.91] [0.55 0.55 0.55] [0.59 0.59 0.59] [0.56 0.56 0.56] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+827.60 460.48 m
+827.60 460.48 l
+stroke
+[607.52 613.72 609.98 118.07 122.04 129.16] [0.88 0.88 0.88] [0.85 0.85 0.85] [0.85 0.85 0.85] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+609.98 129.16 m
+602.13 125.95 l
+stroke
+[432.17 434.49 440.05 200.56 192.93 201.57] [0.49 0.49 0.49] [0.53 0.53 0.53] [0.51 0.51 0.51] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+434.49 192.93 m
+432.17 200.56 l
+stroke
+[720.10 699.44 717.73 180.64 148.23 173.41] [0.51 0.51 0.51] [0.46 0.46 0.46] [0.47 0.47 0.47] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+613.72 122.04 m
+607.52 118.07 l
+644.56 104.12 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+613.72 122.04 m
+647.35 114.03 l
+610.00 130.38 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+613.72 122.04 m
+607.52 118.07 l
+stroke
+[406.73 418.09 411.70 321.34 351.01 344.79] [0.99 0.99 0.99] [0.98 0.98 0.98] [0.95 0.95 0.95] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+411.70 344.79 m
+417.98 350.91 l
+stroke
+[398.14 392.73 397.26 220.85 247.09 216.17] [0.90 0.90 0.90] [0.91 0.91 0.91] [0.89 0.89 0.89] gouraudtriangle
+[406.73 411.70 400.61 321.34 344.79 315.73] [0.99 0.99 0.99] [0.95 0.95 0.95] [0.94 0.94 0.94] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+411.70 344.79 m
+411.70 344.79 l
+stroke
+0.69 0.69 0.69 setrgbcolor
+newpath
+402.89 220.03 m
+398.37 216.41 l
+432.17 200.56 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+398.72 210.75 m
+398.37 216.41 l
+stroke
+0.69 0.69 0.69 setrgbcolor
+newpath
+578.33 614.49 m
+544.70 611.99 l
+584.33 599.53 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+820.45 507.32 m
+840.36 481.15 l
+stroke
+[701.38 676.89 699.44 154.70 126.25 148.23] [0.50 0.50 0.50] [0.46 0.46 0.46] [0.46 0.46 0.46] gouraudtriangle
+[650.68 648.38 644.56 108.16 107.98 104.12] [0.46 0.46 0.46] [0.49 0.49 0.49] [0.47 0.47 0.47] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+648.38 107.98 m
+613.72 122.04 l
+644.56 104.12 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+648.38 107.98 m
+644.56 104.12 l
+stroke
+544.70 611.99 m
+578.33 614.49 l
+stroke
+[392.73 398.14 393.64 247.09 220.85 252.87] [0.91 0.91 0.91] [0.90 0.90 0.90] [0.92 0.92 0.92] gouraudtriangle
+[699.44 720.10 701.38 148.23 180.64 154.70] [0.46 0.46 0.46] [0.51 0.51 0.51] [0.50 0.50 0.50] gouraudtriangle
+[398.14 397.26 398.37 220.85 216.17 216.41] [0.90 0.90 0.90] [0.89 0.89 0.89] [0.88 0.88 0.88] gouraudtriangle
+[400.27 400.61 394.50 289.62 315.73 284.80] [0.98 0.98 0.98] [0.94 0.94 0.94] [0.94 0.94 0.94] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+618.83 610.20 m
+578.33 614.49 l
+620.06 596.51 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+618.83 610.20 m
+620.06 596.51 l
+660.00 587.19 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+1.00 1.00 1.00 setrgbcolor
+newpath
+620.06 596.51 m
+584.33 599.53 l
+492.35 349.85 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+584.33 599.53 m
+620.06 596.51 l
+stroke
+[678.30 650.68 676.89 131.87 108.16 126.25] [0.49 0.49 0.49] [0.46 0.46 0.46] [0.46 0.46 0.46] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+801.59 505.50 m
+820.45 507.32 l
+774.71 529.59 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+774.71 529.59 m
+820.45 507.32 l
+790.73 534.10 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+[692.55 774.71 669.79 259.60 529.59 275.25] [0.65 0.65 0.65] [0.67 0.67 0.67] [0.67 0.67 0.67] gouraudtriangle
+[774.71 643.20 669.79 529.59 291.00 275.25] [0.67 0.67 0.67] [0.71 0.71 0.71] [0.67 0.67 0.67] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+669.79 275.25 m
+755.99 484.23 l
+stroke
+[801.59 774.71 692.55 505.50 529.59 259.60] [0.64 0.64 0.64] [0.67 0.67 0.67] [0.65 0.65 0.65] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+774.71 529.59 m
+801.59 505.50 l
+stroke
+440.05 201.57 m
+444.70 206.38 l
+stroke
+[720.10 734.00 731.55 180.64 208.87 218.91] [0.51 0.51 0.51] [0.51 0.51 0.51] [0.55 0.55 0.55] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+734.00 208.87 m
+734.00 208.87 l
+stroke
+1.00 1.00 1.00 setrgbcolor
+newpath
+555.20 596.32 m
+426.23 354.13 l
+437.21 355.79 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+450.93 355.90 m
+555.20 596.32 l
+437.21 355.79 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+555.20 596.32 m
+555.20 596.32 l
+stroke
+0.69 0.69 0.69 setrgbcolor
+newpath
+607.64 136.98 m
+524.78 165.47 l
+609.98 129.16 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+[676.89 701.38 678.30 126.25 154.70 131.87] [0.46 0.46 0.46] [0.50 0.50 0.50] [0.49 0.49 0.49] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+731.55 218.91 m
+734.00 208.87 l
+stroke
+[400.61 400.27 406.73 315.73 289.62 321.34] [0.94 0.94 0.94] [0.98 0.98 0.98] [0.99 0.99 0.99] gouraudtriangle
+[398.97 394.50 393.64 256.79 284.80 252.87] [0.96 0.96 0.96] [0.94 0.94 0.94] [0.92 0.92 0.92] gouraudtriangle
+[651.53 648.38 650.68 112.89 107.98 108.16] [0.49 0.49 0.49] [0.49 0.49 0.49] [0.46 0.46 0.46] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+607.64 136.98 m
+609.98 129.16 l
+stroke
+[651.53 650.68 678.30 112.89 108.16 131.87] [0.49 0.49 0.49] [0.46 0.46 0.46] [0.49 0.49 0.49] gouraudtriangle
+[717.41 701.38 720.10 190.05 154.70 180.64] [0.55 0.55 0.55] [0.50 0.50 0.50] [0.51 0.51 0.51] gouraudtriangle
+[402.89 398.14 398.37 220.03 220.85 216.41] [0.90 0.90 0.90] [0.90 0.90 0.90] [0.88 0.88 0.88] gouraudtriangle
+[426.23 418.09 406.73 354.13 351.01 321.34] [1.00 1.00 1.00] [0.98 0.98 0.98] [0.99 0.99 0.99] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+418.09 351.01 m
+418.09 351.01 l
+stroke
+[402.95 393.64 398.14 223.85 252.87 220.85] [0.93 0.93 0.93] [0.92 0.92 0.92] [0.90 0.90 0.90] gouraudtriangle
+[394.50 398.97 400.27 284.80 256.79 289.62] [0.94 0.94 0.94] [0.96 0.96 0.96] [0.98 0.98 0.98] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+648.38 107.98 m
+647.35 114.03 l
+613.72 122.04 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+402.89 220.03 m
+432.17 200.56 l
+439.77 203.99 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+459.55 206.26 m
+444.70 206.38 l
+524.78 165.47 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+412.34 221.38 m
+439.77 203.99 l
+457.00 202.57 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+432.17 200.56 m
+439.77 203.99 l
+stroke
+418.09 351.01 m
+424.92 353.63 l
+stroke
+[720.10 731.55 717.41 180.64 218.91 190.05] [0.51 0.51 0.51] [0.55 0.55 0.55] [0.55 0.55 0.55] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+398.37 216.41 m
+402.89 220.03 l
+stroke
+0.69 0.69 0.69 setrgbcolor
+newpath
+610.00 130.38 m
+647.35 114.03 l
+641.28 122.11 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+607.64 136.98 m
+594.80 148.68 l
+524.78 165.47 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+596.21 142.39 m
+610.00 130.38 l
+641.28 122.11 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+610.00 130.38 m
+613.72 122.04 l
+stroke
+0.69 0.69 0.69 setrgbcolor
+newpath
+663.60 599.11 m
+618.83 610.20 l
+660.00 587.19 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+[660.00 620.06 520.73 587.19 596.51 342.47] [0.91 0.91 0.91] [1.00 1.00 1.00] [1.00 1.00 1.00] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+620.06 596.51 m
+660.00 587.19 l
+stroke
+[393.64 402.95 398.97 252.87 223.85 256.79] [0.92 0.92 0.92] [0.93 0.93 0.93] [0.96 0.96 0.96] gouraudtriangle
+[698.45 678.30 701.38 163.27 131.87 154.70] [0.54 0.54 0.54] [0.49 0.49 0.49] [0.50 0.50 0.50] gouraudtriangle
+[651.53 675.21 648.38 112.89 139.43 119.32] [0.49 0.49 0.49] [0.53 0.53 0.53] [0.53 0.53 0.53] gouraudtriangle
+[651.53 647.35 648.38 112.89 114.03 107.98] [0.49 0.49 0.49] [0.53 0.53 0.53] [0.49 0.49 0.49] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+752.86 559.58 m
+740.43 552.39 l
+774.71 529.59 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+790.73 534.10 m
+752.86 559.58 l
+774.71 529.59 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+[774.71 740.43 643.20 529.59 552.39 291.00] [0.67 0.67 0.67] [0.78 0.78 0.78] [0.71 0.71 0.71] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+740.43 552.39 m
+774.71 529.59 l
+stroke
+648.38 107.98 m
+647.39 113.82 l
+stroke
+790.73 534.10 m
+820.45 507.32 l
+stroke
+0.69 0.69 0.69 setrgbcolor
+newpath
+412.34 221.38 m
+402.89 220.03 l
+439.77 203.99 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+[412.34 402.95 402.89 221.38 223.85 220.03] [0.94 0.94 0.94] [0.93 0.93 0.93] [0.90 0.90 0.90] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+412.34 221.38 m
+403.05 220.05 l
+stroke
+[402.95 398.14 402.89 223.85 220.85 220.03] [0.93 0.93 0.93] [0.90 0.90 0.90] [0.90 0.90 0.90] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+578.33 614.49 m
+618.83 610.20 l
+stroke
+774.71 529.59 m
+790.73 534.10 l
+stroke
+[701.38 717.41 698.45 154.70 190.05 163.27] [0.50 0.50 0.50] [0.55 0.55 0.55] [0.54 0.54 0.54] gouraudtriangle
+[675.21 651.53 678.30 139.43 112.89 131.87] [0.53 0.53 0.53] [0.49 0.49 0.49] [0.49 0.49 0.49] gouraudtriangle
+[819.46 710.71 723.79 481.94 244.65 230.95] [0.60 0.60 0.60] [0.62 0.62 0.62] [0.59 0.59 0.59] gouraudtriangle
+[417.91 426.23 406.73 324.60 354.13 321.34] [1.00 1.00 1.00] [1.00 1.00 1.00] [0.99 0.99 0.99] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+424.92 353.63 m
+425.94 354.02 l
+stroke
+[410.88 406.73 400.27 292.18 321.34 289.62] [1.00 1.00 1.00] [0.99 0.99 0.99] [0.98 0.98 0.98] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+663.60 599.11 m
+660.00 587.19 l
+701.18 572.12 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+709.42 581.82 m
+663.60 599.11 l
+701.18 572.12 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+[701.18 660.00 551.24 572.12 587.19 332.47] [0.98 0.98 0.98] [0.91 0.91 0.91] [0.89 0.89 0.89] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+660.00 587.19 m
+701.18 572.12 l
+stroke
+0.69 0.69 0.69 setrgbcolor
+newpath
+709.42 581.82 m
+701.18 572.12 l
+740.43 552.39 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+752.86 559.58 m
+709.42 581.82 l
+740.43 552.39 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+[613.77 740.43 701.18 306.20 552.39 572.12] [0.93 0.93 0.93] [0.78 0.78 0.78] [0.98 0.98 0.98] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+701.18 572.12 m
+740.43 552.39 l
+stroke
+[675.21 678.30 698.45 139.43 131.87 163.27] [0.53 0.53 0.53] [0.49 0.49 0.49] [0.54 0.54 0.54] gouraudtriangle
+[717.41 731.55 723.79 190.05 218.91 230.95] [0.55 0.55 0.55] [0.55 0.55 0.55] [0.58 0.58 0.58] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+524.78 165.47 m
+594.80 148.68 l
+572.66 162.88 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+543.96 177.68 m
+524.78 165.47 l
+572.66 162.88 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+524.78 165.47 m
+572.56 162.88 l
+stroke
+[648.38 647.35 651.53 119.32 114.03 112.89] [0.53 0.53 0.53] [0.53 0.53 0.53] [0.49 0.49 0.49] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+647.35 114.03 m
+647.35 114.03 l
+stroke
+723.79 230.95 m
+731.55 218.91 l
+stroke
+[408.78 400.27 398.97 258.62 289.62 256.79] [0.98 0.98 0.98] [0.98 0.98 0.98] [0.96 0.96 0.96] gouraudtriangle
+1.00 1.00 1.00 setrgbcolor
+newpath
+467.18 354.39 m
+584.33 599.53 l
+450.93 355.90 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+492.35 349.85 m
+584.33 599.53 l
+467.18 354.39 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+584.33 599.53 m
+584.33 599.53 l
+stroke
+[410.88 417.91 406.73 292.18 324.60 321.34] [1.00 1.00 1.00] [1.00 1.00 1.00] [0.99 0.99 0.99] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+459.55 206.26 m
+524.78 165.47 l
+483.17 200.96 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+1.00 1.00 1.00 setrgbcolor
+newpath
+437.21 355.79 m
+426.23 354.13 l
+417.91 324.60 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+426.23 354.13 m
+436.32 355.65 l
+stroke
+426.23 354.13 m
+426.23 354.13 l
+stroke
+[411.71 398.97 402.95 224.99 256.79 223.85] [0.95 0.95 0.95] [0.96 0.96 0.96] [0.93 0.93 0.93] gouraudtriangle
+[698.45 717.41 709.47 163.27 190.05 201.47] [0.54 0.54 0.54] [0.55 0.55 0.55] [0.59 0.59 0.59] gouraudtriangle
+[400.27 408.78 410.88 289.62 258.62 292.18] [0.98 0.98 0.98] [0.98 0.98 0.98] [1.00 1.00 1.00] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+403.05 220.05 m
+403.05 220.05 l
+stroke
+752.86 559.58 m
+790.73 534.10 l
+stroke
+0.69 0.69 0.69 setrgbcolor
+newpath
+426.54 220.26 m
+412.34 221.38 l
+457.00 202.57 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+426.54 220.26 m
+457.00 202.57 l
+445.09 216.63 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+457.00 202.57 m
+482.27 196.21 l
+445.09 216.63 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+439.77 203.99 m
+457.00 202.57 l
+stroke
+[717.41 723.79 709.47 190.05 230.95 201.47] [0.55 0.55 0.55] [0.58 0.58 0.58] [0.59 0.59 0.59] gouraudtriangle
+[408.78 398.97 411.71 258.62 256.79 224.99] [0.98 0.98 0.98] [0.96 0.96 0.96] [0.95 0.95 0.95] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+618.83 610.20 m
+663.60 599.11 l
+stroke
+[648.38 667.49 641.16 119.32 148.76 127.31] [0.53 0.53 0.53] [0.56 0.56 0.56] [0.57 0.57 0.57] gouraudtriangle
+[648.38 641.28 647.35 119.32 122.11 114.03] [0.53 0.53 0.53] [0.57 0.57 0.57] [0.53 0.53 0.53] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+647.35 114.03 m
+641.68 121.57 l
+stroke
+[402.95 412.34 411.71 223.85 221.38 224.99] [0.93 0.93 0.93] [0.94 0.94 0.94] [0.95 0.95 0.95] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+524.78 165.47 m
+512.65 191.00 l
+483.17 200.96 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+[690.51 675.21 698.45 173.76 139.43 163.27] [0.58 0.58 0.58] [0.53 0.53 0.53] [0.54 0.54 0.54] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+630.18 131.98 m
+596.21 142.39 l
+641.28 122.11 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+630.18 131.98 m
+614.33 143.27 l
+596.21 142.39 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+596.21 142.39 m
+610.00 130.38 l
+stroke
+[667.49 648.38 675.21 148.76 119.32 139.43] [0.56 0.56 0.56] [0.53 0.53 0.53] [0.53 0.53 0.53] gouraudtriangle
+1.00 1.00 1.00 setrgbcolor
+newpath
+417.91 324.60 m
+434.05 325.26 l
+437.21 355.79 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+437.21 355.79 m
+437.21 355.79 l
+stroke
+0.69 0.69 0.69 setrgbcolor
+newpath
+543.96 177.68 m
+512.65 191.00 l
+524.78 165.47 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+[690.51 698.45 709.47 173.76 163.27 201.47] [0.58 0.58 0.58] [0.54 0.54 0.54] [0.59 0.59 0.59] gouraudtriangle
+[801.59 692.55 710.71 505.50 259.60 244.65] [0.64 0.64 0.64] [0.65 0.65 0.65] [0.62 0.62 0.62] gouraudtriangle
+1.00 1.00 1.00 setrgbcolor
+newpath
+410.88 292.18 m
+426.25 292.28 l
+417.91 324.60 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+709.42 581.82 m
+752.86 559.58 l
+stroke
+663.60 599.11 m
+709.42 581.82 l
+stroke
+1.00 1.00 1.00 setrgbcolor
+newpath
+450.93 355.90 m
+437.21 355.79 l
+434.05 325.26 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+437.21 355.79 m
+450.06 355.89 l
+stroke
+[641.16 630.18 641.28 127.31 131.98 122.11] [0.57 0.57 0.57] [0.61 0.61 0.61] [0.57 0.57 0.57] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+640.82 122.52 m
+631.52 130.79 l
+stroke
+[641.16 641.28 648.38 127.31 122.11 119.32] [0.57 0.57 0.57] [0.57 0.57 0.57] [0.53 0.53 0.53] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+641.28 122.11 m
+641.28 122.11 l
+stroke
+[675.21 690.51 667.49 139.43 173.76 148.76] [0.53 0.53 0.53] [0.58 0.58 0.58] [0.56 0.56 0.56] gouraudtriangle
+[709.47 723.79 710.71 201.47 230.95 244.65] [0.59 0.59 0.59] [0.58 0.58 0.58] [0.62 0.62 0.62] gouraudtriangle
+[422.95 410.88 408.78 258.20 292.18 258.62] [0.99 0.99 0.99] [1.00 1.00 1.00] [0.98 0.98 0.98] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+710.71 244.65 m
+723.79 230.95 l
+stroke
+[424.31 408.78 411.71 224.16 258.62 224.99] [0.96 0.96 0.96] [0.98 0.98 0.98] [0.95 0.95 0.95] gouraudtriangle
+[424.31 411.71 412.34 224.16 224.99 221.38] [0.96 0.96 0.96] [0.95 0.95 0.95] [0.94 0.94 0.94] gouraudtriangle
+1.00 1.00 1.00 setrgbcolor
+newpath
+426.25 292.28 m
+434.05 325.26 l
+417.91 324.60 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+774.71 529.59 m
+755.99 484.23 l
+stroke
+[424.31 412.34 426.54 224.16 221.38 220.26] [0.96 0.96 0.96] [0.94 0.94 0.94] [0.96 0.96 0.96] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+412.34 221.38 m
+425.90 220.31 l
+stroke
+1.00 1.00 1.00 setrgbcolor
+newpath
+422.95 258.20 m
+426.25 292.28 l
+410.88 292.18 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+[696.27 690.51 709.47 214.58 173.76 201.47] [0.62 0.62 0.62] [0.58 0.58 0.58] [0.59 0.59 0.59] gouraudtriangle
+[422.95 408.78 424.31 258.20 258.62 224.16] [0.99 0.99 0.99] [0.98 0.98 0.98] [0.96 0.96 0.96] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+482.27 196.21 m
+467.27 210.56 l
+445.09 216.63 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+492.15 202.26 m
+467.27 210.56 l
+482.27 196.21 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+457.00 202.57 m
+482.27 196.21 l
+stroke
+640.82 122.52 m
+640.82 122.52 l
+stroke
+[696.27 709.47 710.71 214.58 201.47 244.65] [0.62 0.62 0.62] [0.59 0.59 0.59] [0.62 0.62 0.62] gouraudtriangle
+[572.66 596.21 573.52 162.88 142.39 156.76] [0.69 0.69 0.69] [0.60 0.60 0.60] [0.69 0.69 0.69] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+596.21 142.39 m
+614.33 143.27 l
+573.52 156.76 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+573.52 156.76 m
+614.33 143.27 l
+594.30 155.50 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+[573.52 544.48 572.66 156.76 171.79 162.88] [0.69 0.69 0.69] [0.77 0.77 0.77] [0.69 0.69 0.69] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+572.66 162.88 m
+573.52 156.81 l
+stroke
+572.66 162.88 m
+572.66 162.88 l
+stroke
+0.69 0.69 0.69 setrgbcolor
+newpath
+573.52 156.76 m
+573.69 156.75 l
+573.50 156.85 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+[544.48 512.69 543.96 171.79 185.52 177.68] [0.77 0.77 0.77] [0.84 0.84 0.84] [0.79 0.79 0.79] gouraudtriangle
+[544.48 543.96 572.66 171.79 177.68 162.88] [0.77 0.77 0.77] [0.79 0.79 0.79] [0.69 0.69 0.69] gouraudtriangle
+0.69 0.69 0.69 setrgbcolor
+newpath
+518.58 192.09 m
+512.69 185.52 l
+544.48 171.79 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+512.69 185.52 m
+543.90 172.03 l
+stroke
+0.69 0.69 0.69 setrgbcolor
+newpath
+573.69 156.75 m
+594.30 155.50 l
+570.93 168.12 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+573.50 156.85 m
+573.69 156.75 l
+570.93 168.12 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+544.48 171.79 m
+573.52 156.76 l
+570.93 168.12 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+573.52 156.76 m
+562.48 162.47 l
+stroke
+573.52 156.76 m
+596.21 142.39 l
+stroke
+[677.57 667.49 690.51 185.90 148.76 173.76] [0.61 0.61 0.61] [0.56 0.56 0.56] [0.58 0.58 0.58] gouraudtriangle
+[655.20 641.16 667.49 159.62 127.31 148.76] [0.59 0.59 0.59] [0.57 0.57 0.57] [0.56 0.56 0.56] gouraudtriangle
+1.00 1.00 1.00 setrgbcolor
+newpath
+467.18 354.39 m
+450.93 355.90 l
+454.80 323.16 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+467.18 354.39 m
+455.93 355.44 l
+stroke
+1.00 1.00 1.00 setrgbcolor
+newpath
+434.05 325.26 m
+454.80 323.16 l
+450.93 355.90 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+450.93 355.90 m
+455.93 355.44 l
+stroke
+450.93 355.90 m
+450.93 355.90 l
+stroke
+573.52 156.76 m
+573.52 156.76 l
+stroke
+[677.57 690.51 696.27 185.90 173.76 214.58] [0.61 0.61 0.61] [0.58 0.58 0.58] [0.62 0.62 0.62] gouraudtriangle
+[629.94 614.33 630.18 136.65 143.27 131.98] [0.61 0.61 0.61] [0.65 0.65 0.65] [0.61 0.61 0.61] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+629.45 132.50 m
+618.18 140.53 l
+stroke
+[629.94 630.18 641.16 136.65 131.98 127.31] [0.61 0.61 0.61] [0.61 0.61 0.61] [0.57 0.57 0.57] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+630.18 131.98 m
+631.52 130.79 l
+stroke
+1.00 1.00 1.00 setrgbcolor
+newpath
+620.06 596.51 m
+492.35 349.85 l
+520.73 342.47 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+1.00 1.00 1.00 setrgbcolor
+newpath
+426.25 292.28 m
+446.02 289.78 l
+434.05 325.26 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+[629.94 641.16 655.20 136.65 127.31 159.62] [0.61 0.61 0.61] [0.57 0.57 0.57] [0.59 0.59 0.59] gouraudtriangle
+[655.20 667.49 677.57 159.62 148.76 185.90] [0.59 0.59 0.59] [0.56 0.56 0.56] [0.61 0.61 0.61] gouraudtriangle
+[440.45 422.95 424.31 221.30 258.20 224.16] [0.98 0.98 0.98] [0.99 0.99 0.99] [0.96 0.96 0.96] gouraudtriangle
+[440.45 424.31 426.54 221.30 224.16 220.26] [0.98 0.98 0.98] [0.96 0.96 0.96] [0.96 0.96 0.96] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+426.54 220.26 m
+426.54 220.26 l
+stroke
+[692.55 696.27 710.71 259.60 214.58 244.65] [0.64 0.64 0.64] [0.62 0.62 0.62] [0.62 0.62 0.62] gouraudtriangle
+0.99 0.99 0.99 setrgbcolor
+newpath
+422.95 258.20 m
+441.18 255.43 l
+426.25 292.28 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+[512.69 482.27 512.65 185.52 196.21 191.00] [0.84 0.84 0.84] [0.87 0.87 0.87] [0.85 0.85 0.85] gouraudtriangle
+[692.55 678.07 696.27 259.60 228.98 214.58] [0.64 0.64 0.64] [0.64 0.64 0.64] [0.62 0.62 0.62] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+692.55 259.60 m
+710.71 244.65 l
+stroke
+0.69 0.69 0.69 setrgbcolor
+newpath
+492.15 202.26 m
+482.27 196.21 l
+512.69 185.52 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+518.58 192.09 m
+492.15 202.26 l
+512.69 185.52 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+482.27 196.21 m
+512.69 185.52 l
+stroke
+1.00 1.00 1.00 setrgbcolor
+newpath
+446.02 289.78 m
+454.80 323.16 l
+434.05 325.26 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.69 0.69 0.69 setrgbcolor
+newpath
+545.27 180.52 m
+544.48 171.79 l
+570.93 168.12 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+544.48 171.79 m
+562.48 162.47 l
+stroke
+[440.45 426.54 445.09 221.30 220.26 216.63] [0.98 0.98 0.98] [0.96 0.96 0.96] [1.00 1.00 1.00] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+426.54 220.26 m
+443.99 216.84 l
+stroke
+[440.45 441.18 422.95 221.30 255.43 258.20] [0.98 0.98 0.98] [0.99 0.99 0.99] [0.99 0.99 0.99] gouraudtriangle
+[426.25 441.18 446.02 292.28 255.43 289.78] [1.00 1.00 1.00] [0.99 0.99 0.99] [1.00 1.00 1.00] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+629.45 132.50 m
+629.45 132.50 l
+stroke
+[678.07 677.57 696.27 228.98 185.90 214.58] [0.64 0.64 0.64] [0.61 0.61 0.61] [0.62 0.62 0.62] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+544.48 171.79 m
+544.48 171.79 l
+stroke
+[701.18 551.24 582.69 572.12 332.47 320.22] [0.98 0.98 0.98] [0.89 0.89 0.89] [0.96 0.96 0.96] gouraudtriangle
+[660.00 520.73 551.24 587.19 342.47 332.47] [0.91 0.91 0.91] [1.00 1.00 1.00] [0.89 0.89 0.89] gouraudtriangle
+1.00 1.00 1.00 setrgbcolor
+newpath
+467.18 354.39 m
+454.80 323.16 l
+479.59 318.25 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+492.35 349.85 m
+467.18 354.39 l
+479.59 318.25 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+467.18 354.39 m
+492.35 349.85 l
+stroke
+[638.58 629.94 655.20 171.67 136.65 159.62] [0.63 0.63 0.63] [0.61 0.61 0.61] [0.59 0.59 0.59] gouraudtriangle
+[659.87 655.20 677.57 199.30 159.62 185.90] [0.63 0.63 0.63] [0.59 0.59 0.59] [0.61 0.61 0.61] gouraudtriangle
+[643.20 740.43 613.77 291.00 552.39 306.20] [0.71 0.71 0.71] [0.78 0.78 0.78] [0.93 0.93 0.93] gouraudtriangle
+[614.98 614.33 629.94 147.05 143.27 136.65] [0.65 0.65 0.65] [0.65 0.65 0.65] [0.61 0.61 0.61] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+614.33 143.27 m
+618.18 140.53 l
+stroke
+573.52 156.76 m
+594.15 155.51 l
+stroke
+[638.58 614.98 629.94 171.67 147.05 136.65] [0.63 0.63 0.63] [0.65 0.65 0.65] [0.61 0.61 0.61] gouraudtriangle
+[613.77 701.18 582.69 306.20 572.12 320.22] [0.93 0.93 0.93] [0.98 0.98 0.98] [0.96 0.96 0.96] gouraudtriangle
+[678.07 659.87 677.57 228.98 199.30 185.90] [0.64 0.64 0.64] [0.63 0.63 0.63] [0.61 0.61 0.61] gouraudtriangle
+[459.67 481.33 462.93 216.45 209.73 250.32] [0.99 0.99 0.99] [0.94 0.94 0.94] [0.97 0.97 0.97] gouraudtriangle
+1.00 1.00 1.00 setrgbcolor
+newpath
+459.67 216.45 m
+445.09 216.63 l
+467.27 210.56 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+448.42 215.72 m
+465.58 211.02 l
+stroke
+[459.67 440.45 445.09 216.45 221.30 216.63] [0.99 0.99 0.99] [0.98 0.98 0.98] [1.00 1.00 1.00] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+445.09 216.63 m
+443.99 216.84 l
+stroke
+[440.45 459.67 441.18 221.30 216.45 255.43] [0.98 0.98 0.98] [0.99 0.99 0.99] [0.99 0.99 0.99] gouraudtriangle
+[659.87 638.58 655.20 199.30 171.67 159.62] [0.63 0.63 0.63] [0.63 0.63 0.63] [0.59 0.59 0.59] gouraudtriangle
+[446.02 469.65 454.80 289.78 284.67 323.16] [1.00 1.00 1.00] [0.99 0.99 0.99] [1.00 1.00 1.00] gouraudtriangle
+[669.79 678.07 692.55 275.25 228.98 259.60] [0.66 0.66 0.66] [0.64 0.64 0.64] [0.64 0.64 0.64] gouraudtriangle
+[441.18 462.93 446.02 255.43 250.32 289.78] [0.99 0.99 0.99] [0.97 0.97 0.97] [1.00 1.00 1.00] gouraudtriangle
+[669.79 655.35 678.07 275.25 244.14 228.98] [0.66 0.66 0.66] [0.66 0.66 0.66] [0.64 0.64 0.64] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+669.79 275.25 m
+692.55 259.60 l
+stroke
+445.09 216.63 m
+448.42 215.72 l
+stroke
+[614.98 594.30 614.33 147.05 155.50 143.27] [0.65 0.65 0.65] [0.69 0.69 0.69] [0.65 0.65 0.65] gouraudtriangle
+[479.59 454.80 469.65 318.25 323.16 284.67] [1.00 1.00 1.00] [1.00 1.00 1.00] [0.99 0.99 0.99] gouraudtriangle
+[441.18 459.67 462.93 255.43 216.45 250.32] [0.99 0.99 0.99] [0.99 0.99 0.99] [0.97 0.97 0.97] gouraudtriangle
+[614.98 596.70 594.30 147.05 158.17 155.50] [0.65 0.65 0.65] [0.69 0.69 0.69] [0.69 0.69 0.69] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+594.30 155.50 m
+614.33 143.27 l
+stroke
+[446.02 462.93 469.65 289.78 250.32 284.67] [1.00 1.00 1.00] [0.97 0.97 0.97] [0.99 0.99 0.99] gouraudtriangle
+[492.35 479.59 507.58 349.85 318.25 310.63] [1.00 1.00 1.00] [1.00 1.00 1.00] [0.96 0.96 0.96] gouraudtriangle
+[520.73 492.35 507.58 342.47 349.85 310.63] [0.96 0.96 0.96] [1.00 1.00 1.00] [0.96 0.96 0.96] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+492.35 349.85 m
+520.73 342.47 l
+stroke
+[655.35 659.87 678.07 244.14 199.30 228.98] [0.66 0.66 0.66] [0.63 0.63 0.63] [0.64 0.64 0.64] gouraudtriangle
+[618.13 614.98 638.58 184.50 147.05 171.67] [0.67 0.67 0.67] [0.65 0.65 0.65] [0.63 0.63 0.63] gouraudtriangle
+[637.92 638.58 659.87 213.51 171.67 199.30] [0.65 0.65 0.65] [0.63 0.63 0.63] [0.63 0.63 0.63] gouraudtriangle
+[618.13 596.70 614.98 184.50 158.17 147.05] [0.67 0.67 0.67] [0.69 0.69 0.69] [0.65 0.65 0.65] gouraudtriangle
+[462.93 481.33 487.50 250.32 209.73 243.00] [0.97 0.97 0.97] [0.94 0.94 0.94] [0.93 0.93 0.93] gouraudtriangle
+[481.33 504.67 487.50 209.73 201.35 243.00] [0.94 0.94 0.94] [0.87 0.87 0.87] [0.93 0.93 0.93] gouraudtriangle
+[481.33 467.27 492.15 209.73 210.56 202.26] [0.94 0.94 0.94] [1.00 1.00 1.00] [0.92 0.92 0.92] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+470.21 209.58 m
+489.69 203.08 l
+stroke
+[481.33 459.67 467.27 209.73 216.45 210.56] [0.94 0.94 0.94] [0.99 0.99 0.99] [1.00 1.00 1.00] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+467.27 210.56 m
+465.58 211.02 l
+stroke
+[596.70 575.72 594.30 158.17 169.59 155.50] [0.69 0.69 0.69] [0.72 0.72 0.72] [0.69 0.69 0.69] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+594.30 155.50 m
+596.70 158.17 l
+stroke
+[669.79 643.20 655.35 275.25 291.00 244.14] [0.66 0.66 0.66] [0.69 0.69 0.69] [0.66 0.66 0.66] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+655.35 244.14 m
+669.79 275.25 l
+stroke
+0.69 0.69 0.69 setrgbcolor
+newpath
+545.27 180.52 m
+518.58 192.09 l
+544.48 171.79 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+[655.35 637.92 659.87 244.14 213.51 199.30] [0.66 0.66 0.66] [0.65 0.65 0.65] [0.63 0.63 0.63] gouraudtriangle
+[643.20 628.88 655.35 291.00 259.50 244.14] [0.69 0.69 0.69] [0.70 0.70 0.70] [0.66 0.66 0.66] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+643.20 291.00 m
+669.79 275.25 l
+stroke
+[637.92 618.13 638.58 213.51 184.50 171.67] [0.65 0.65 0.65] [0.67 0.67 0.67] [0.63 0.63 0.63] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+467.27 210.56 m
+470.21 209.58 l
+stroke
+594.30 155.50 m
+594.30 155.50 l
+stroke
+[469.65 496.36 479.59 284.67 277.06 318.25] [0.99 0.99 0.99] [0.95 0.95 0.95] [1.00 1.00 1.00] gouraudtriangle
+[462.93 487.50 469.65 250.32 243.00 284.67] [0.97 0.97 0.97] [0.93 0.93 0.93] [0.99 0.99 0.99] gouraudtriangle
+[594.50 596.70 618.13 197.63 158.17 184.50] [0.70 0.70 0.70] [0.69 0.69 0.69] [0.67 0.67 0.67] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+596.70 158.17 m
+618.13 184.50 l
+stroke
+[575.72 570.93 594.30 169.59 168.12 155.50] [0.72 0.72 0.72] [0.73 0.73 0.73] [0.69 0.69 0.69] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+570.93 168.12 m
+594.30 155.50 l
+stroke
+[507.58 479.59 496.36 310.63 318.25 277.06] [0.96 0.96 0.96] [1.00 1.00 1.00] [0.95 0.95 0.95] gouraudtriangle
+[628.88 637.92 655.35 259.50 213.51 244.14] [0.70 0.70 0.70] [0.65 0.65 0.65] [0.66 0.66 0.66] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+637.92 213.51 m
+655.35 244.14 l
+stroke
+[520.73 507.58 537.73 342.47 310.63 300.52] [0.96 0.96 0.96] [0.96 0.96 0.96] [0.91 0.91 0.91] gouraudtriangle
+[551.24 520.73 537.73 332.47 342.47 300.52] [0.91 0.91 0.91] [0.96 0.96 0.96] [0.91 0.91 0.91] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+520.73 342.47 m
+551.24 332.47 l
+stroke
+[612.45 618.13 637.92 227.98 184.50 213.51] [0.68 0.68 0.68] [0.67 0.67 0.67] [0.65 0.65 0.65] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+618.13 184.50 m
+637.92 213.51 l
+stroke
+[487.50 504.67 514.00 243.00 201.35 233.69] [0.93 0.93 0.93] [0.87 0.87 0.87] [0.88 0.88 0.88] gouraudtriangle
+[504.67 528.80 514.00 201.35 191.61 233.69] [0.87 0.87 0.87] [0.81 0.81 0.81] [0.88 0.88 0.88] gouraudtriangle
+[504.67 492.15 518.58 201.35 202.26 192.09] [0.87 0.87 0.87] [0.92 0.92 0.92] [0.82 0.82 0.82] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+494.74 201.27 m
+515.10 193.43 l
+stroke
+[504.67 481.33 492.15 201.35 209.73 202.26] [0.87 0.87 0.87] [0.94 0.94 0.94] [0.92 0.92 0.92] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+492.15 202.26 m
+489.69 203.08 l
+stroke
+[469.65 487.50 496.36 284.67 243.00 277.06] [0.99 0.99 0.99] [0.93 0.93 0.93] [0.95 0.95 0.95] gouraudtriangle
+[575.72 596.70 594.50 169.59 158.17 197.63] [0.72 0.72 0.72] [0.69 0.69 0.69] [0.70 0.70 0.70] gouraudtriangle
+[552.80 545.27 570.93 180.88 180.52 168.12] [0.75 0.75 0.75] [0.76 0.76 0.76] [0.73 0.73 0.73] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+545.27 180.52 m
+563.07 171.92 l
+stroke
+[575.72 552.80 570.93 169.59 180.88 168.12] [0.72 0.72 0.72] [0.75 0.75 0.75] [0.73 0.73 0.73] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+492.15 202.26 m
+494.74 201.27 l
+stroke
+[643.20 613.77 628.88 291.00 306.20 259.50] [0.69 0.69 0.69] [0.97 0.97 0.97] [0.70 0.70 0.70] gouraudtriangle
+[613.77 599.66 628.88 306.20 274.42 259.50] [0.97 0.97 0.97] [1.00 1.00 1.00] [0.70 0.70 0.70] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+613.77 306.20 m
+643.20 291.00 l
+stroke
+570.93 168.12 m
+563.07 171.92 l
+stroke
+[528.80 518.58 545.27 191.61 192.09 180.52] [0.81 0.81 0.81] [0.82 0.82 0.82] [0.76 0.76 0.76] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+520.81 191.12 m
+540.31 182.67 l
+stroke
+[528.80 504.67 518.58 191.61 201.35 192.09] [0.81 0.81 0.81] [0.87 0.87 0.87] [0.82 0.82 0.82] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+518.58 192.09 m
+515.10 193.43 l
+stroke
+[582.69 551.24 568.86 320.22 332.47 288.29] [1.00 1.00 1.00] [0.91 0.91 0.91] [1.00 1.00 1.00] gouraudtriangle
+[551.24 537.73 568.86 332.47 300.52 288.29] [0.91 0.91 0.91] [0.91 0.91 0.91] [1.00 1.00 1.00] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+551.24 332.47 m
+582.69 320.22 l
+stroke
+518.58 192.09 m
+520.81 191.12 l
+stroke
+[594.50 618.13 612.45 197.63 184.50 227.98] [0.70 0.70 0.70] [0.67 0.67 0.67] [0.68 0.68 0.68] gouraudtriangle
+[612.45 637.92 628.88 227.98 213.51 259.50] [0.68 0.68 0.68] [0.65 0.65 0.65] [0.70 0.70 0.70] gouraudtriangle
+[552.80 528.80 545.27 180.88 191.61 180.52] [0.75 0.75 0.75] [0.81 0.81 0.81] [0.76 0.76 0.76] gouraudtriangle
+0.00 0.00 0.00 setrgbcolor
+545.27 180.52 m
+540.31 182.67 l
+stroke
+[487.50 514.00 496.36 243.00 233.69 277.06] [0.93 0.93 0.93] [0.88 0.88 0.88] [0.95 0.95 0.95] gouraudtriangle
+[613.77 582.69 599.66 306.20 320.22 274.42] [0.97 0.97 0.97] [1.00 1.00 1.00] [1.00 1.00 1.00] gouraudtriangle
+1.00 1.00 1.00 setrgbcolor
+newpath
+582.69 320.22 m
+568.86 288.29 l
+599.66 274.42 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.00 setrgbcolor
+582.69 320.22 m
+613.77 306.20 l
+stroke
+[496.36 525.16 507.58 277.06 267.17 310.63] [0.95 0.95 0.95] [0.90 0.90 0.90] [0.96 0.96 0.96] gouraudtriangle
+[552.80 575.72 568.59 180.88 169.59 210.54] [0.75 0.75 0.75] [0.72 0.72 0.72] [0.75 0.75 0.75] gouraudtriangle
+[568.59 575.72 594.50 210.54 169.59 197.63] [0.75 0.75 0.75] [0.72 0.72 0.72] [0.70 0.70 0.70] gouraudtriangle
+[537.73 507.58 525.16 300.52 310.63 267.17] [0.91 0.91 0.91] [0.96 0.96 0.96] [0.90 0.90 0.90] gouraudtriangle
+[528.80 552.80 541.39 191.61 180.88 222.73] [0.81 0.81 0.81] [0.75 0.75 0.75] [0.82 0.82 0.82] gouraudtriangle
+[496.36 514.00 525.16 277.06 233.69 267.17] [0.95 0.95 0.95] [0.88 0.88 0.88] [0.90 0.90 0.90] gouraudtriangle
+[628.88 599.66 612.45 259.50 274.42 227.98] [0.70 0.70 0.70] [1.00 1.00 1.00] [0.68 0.68 0.68] gouraudtriangle
+[514.00 528.80 541.39 233.69 191.61 222.73] [0.88 0.88 0.88] [0.81 0.81 0.81] [0.82 0.82 0.82] gouraudtriangle
+[541.39 552.80 568.59 222.73 180.88 210.54] [0.82 0.82 0.82] [0.75 0.75 0.75] [0.75 0.75 0.75] gouraudtriangle
+[584.41 594.50 612.45 242.12 197.63 227.98] [0.78 0.78 0.78] [0.70 0.70 0.70] [0.68 0.68 0.68] gouraudtriangle
+[568.59 594.50 584.41 210.54 197.63 242.12] [0.75 0.75 0.75] [0.70 0.70 0.70] [0.78 0.78 0.78] gouraudtriangle
+[514.00 541.39 525.16 233.69 222.73 267.17] [0.88 0.88 0.88] [0.82 0.82 0.82] [0.90 0.90 0.90] gouraudtriangle
+[584.41 612.45 599.66 242.12 227.98 274.42] [0.78 0.78 0.78] [0.68 0.68 0.68] [1.00 1.00 1.00] gouraudtriangle
+[525.16 554.91 537.73 267.17 255.37 300.52] [0.90 0.90 0.90] [0.86 0.86 0.86] [0.91 0.91 0.91] gouraudtriangle
+[568.86 537.73 554.91 288.29 300.52 255.37] [1.00 1.00 1.00] [0.91 0.91 0.91] [0.86 0.86 0.86] gouraudtriangle
+[599.66 568.86 584.41 274.42 288.29 242.12] [1.00 1.00 1.00] [1.00 1.00 1.00] [0.78 0.78 0.78] gouraudtriangle
+[525.16 541.39 554.91 267.17 222.73 255.37] [0.90 0.90 0.90] [0.82 0.82 0.82] [0.86 0.86 0.86] gouraudtriangle
+[541.39 568.59 554.91 222.73 210.54 255.37] [0.82 0.82 0.82] [0.75 0.75 0.75] [0.86 0.86 0.86] gouraudtriangle
+[554.91 568.59 584.41 255.37 210.54 242.12] [0.86 0.86 0.86] [0.75 0.75 0.75] [0.78 0.78 0.78] gouraudtriangle
+[554.91 584.41 568.86 255.37 242.12 288.29] [0.86 0.86 0.86] [0.78 0.78 0.78] [1.00 1.00 1.00] gouraudtriangle
+0 setlinejoin
+0.48 setlinewidth
+[6.00 3.00] 0 setdash
+1.92 setlinewidth
+0.73 0.73 0.00 setrgbcolor
+506.05 122.53 m
+684.34 531.42 l
+stroke
+0.48 setlinewidth
+[] 0 setdash
+0.66 0.00 0.00 setrgbcolor
+newpath
+112.75 64.31 m
+112.96 65.91 l
+112.33 67.39 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+112.75 64.31 m
+112.33 67.39 l
+111.09 68.19 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+112.75 64.31 m
+111.09 68.19 l
+109.73 68.00 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+112.75 64.31 m
+109.73 68.00 l
+108.76 66.91 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+112.75 64.31 m
+108.76 66.91 l
+108.55 65.31 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+112.75 64.31 m
+108.55 65.31 l
+109.18 63.83 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+112.75 64.31 m
+109.18 63.83 l
+110.42 63.02 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+112.75 64.31 m
+110.42 63.02 l
+111.78 63.21 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.50 0.00 0.00 setrgbcolor
+newpath
+97.11 61.05 m
+111.78 63.21 l
+110.42 63.02 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+110.42 63.02 m
+95.75 60.87 l
+97.11 61.05 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+2 setlinejoin
+0 setlinecap
+0.50 setlinewidth
+[95.75 110.42 109.18 60.87 63.02 63.83] [0.50 0.00 0.00] [0.50 0.00 0.00] [0.64 0.00 0.00] gouraudtriangle
+[109.18 94.51 95.75 63.83 61.67 60.87] [0.64 0.00 0.00] [0.64 0.00 0.00] [0.50 0.00 0.00] gouraudtriangle
+[94.51 109.18 108.55 61.67 63.83 65.31] [0.64 0.00 0.00] [0.64 0.00 0.00] [0.77 0.00 0.00] gouraudtriangle
+[108.55 93.88 94.51 65.31 63.16 61.67] [0.77 0.00 0.00] [0.77 0.00 0.00] [0.64 0.00 0.00] gouraudtriangle
+[93.88 108.55 108.76 63.16 65.31 66.91] [0.77 0.00 0.00] [0.77 0.00 0.00] [0.80 0.00 0.00] gouraudtriangle
+[108.76 94.09 93.88 66.91 64.75 63.16] [0.80 0.00 0.00] [0.80 0.00 0.00] [0.77 0.00 0.00] gouraudtriangle
+[94.09 108.76 109.73 64.75 66.91 68.00] [0.80 0.00 0.00] [0.80 0.00 0.00] [0.72 0.00 0.00] gouraudtriangle
+[109.73 95.05 94.09 68.00 65.85 64.75] [0.72 0.00 0.00] [0.72 0.00 0.00] [0.80 0.00 0.00] gouraudtriangle
+[118.66 114.95 111.65 66.77 70.36 72.50] [0.66 0.00 0.00] [0.50 0.00 0.00] [0.61 0.00 0.00] gouraudtriangle
+[118.66 111.65 108.02 66.77 72.50 72.00] [0.66 0.00 0.00] [0.61 0.00 0.00] [0.76 0.00 0.00] gouraudtriangle
+[118.66 108.02 105.43 66.77 72.00 69.07] [0.66 0.00 0.00] [0.76 0.00 0.00] [0.84 0.00 0.00] gouraudtriangle
+[118.66 105.43 104.87 66.77 69.07 64.81] [0.66 0.00 0.00] [0.84 0.00 0.00] [0.82 0.00 0.00] gouraudtriangle
+[118.66 104.87 106.56 66.77 64.81 60.86] [0.66 0.00 0.00] [0.82 0.00 0.00] [0.70 0.00 0.00] gouraudtriangle
+[118.66 106.56 109.86 66.77 60.86 58.72] [0.66 0.00 0.00] [0.70 0.00 0.00] [0.52 0.00 0.00] gouraudtriangle
+[118.66 109.86 113.50 66.77 58.72 59.21] [0.66 0.00 0.00] [0.52 0.00 0.00] [0.50 0.00 0.00] gouraudtriangle
+[118.66 113.50 116.09 66.77 59.21 62.14] [0.66 0.00 0.00] [0.50 0.00 0.00] [0.50 0.00 0.00] gouraudtriangle
+0.00 0.55 0.00 setrgbcolor
+newpath
+97.49 63.66 m
+96.05 64.38 l
+94.62 64.75 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+97.49 63.66 m
+94.62 64.75 l
+93.75 64.63 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+97.49 63.66 m
+93.75 64.63 l
+93.77 64.05 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+97.49 63.66 m
+93.77 64.05 l
+94.67 63.25 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+97.49 63.66 m
+94.67 63.25 l
+96.12 62.52 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+97.49 63.66 m
+96.12 62.52 l
+97.55 62.16 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+97.49 63.66 m
+97.55 62.16 l
+98.42 62.28 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+97.49 63.66 m
+98.42 62.28 l
+98.40 62.86 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+[97.49 107.93 106.48 63.66 87.52 88.24] [0.00 0.66 0.00] [0.00 0.66 0.00] [0.03 0.85 0.03] gouraudtriangle
+[106.48 96.05 97.49 88.24 64.38 63.66] [0.03 0.85 0.03] [0.03 0.85 0.03] [0.00 0.66 0.00] gouraudtriangle
+[96.05 106.48 105.05 64.38 88.24 88.61] [0.03 0.85 0.03] [0.03 0.85 0.03] [0.00 0.84 0.00] gouraudtriangle
+[105.05 94.62 96.05 88.61 64.75 64.38] [0.00 0.84 0.00] [0.00 0.84 0.00] [0.03 0.85 0.03] gouraudtriangle
+[94.62 105.05 104.18 64.75 88.61 88.48] [0.00 0.84 0.00] [0.00 0.84 0.00] [0.00 0.74 0.00] gouraudtriangle
+[104.18 93.75 94.62 88.48 64.63 64.75] [0.00 0.74 0.00] [0.00 0.74 0.00] [0.00 0.84 0.00] gouraudtriangle
+0.00 0.50 0.00 setrgbcolor
+newpath
+98.42 62.28 m
+108.86 86.14 l
+108.84 86.71 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+108.84 86.71 m
+98.40 62.86 l
+98.42 62.28 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+[98.40 108.84 107.93 62.86 86.71 87.52] [0.00 0.50 0.00] [0.00 0.50 0.00] [0.00 0.66 0.00] gouraudtriangle
+[107.93 97.49 98.40 87.52 63.66 62.86] [0.00 0.66 0.00] [0.00 0.66 0.00] [0.00 0.50 0.00] gouraudtriangle
+[112.14 110.28 112.70 100.16 87.86 85.72] [0.00 0.50 0.00] [0.00 0.62 0.00] [0.00 0.50 0.00] gouraudtriangle
+[112.14 100.29 102.61 100.16 90.43 90.77] [0.00 0.50 0.00] [0.00 0.69 0.00] [0.00 0.78 0.00] gouraudtriangle
+[112.14 102.61 106.43 100.16 90.77 89.79] [0.00 0.50 0.00] [0.00 0.78 0.00] [0.00 0.76 0.00] gouraudtriangle
+[112.14 106.43 110.28 100.16 89.79 87.86] [0.00 0.50 0.00] [0.00 0.76 0.00] [0.00 0.62 0.00] gouraudtriangle
+0.00 0.55 0.00 setrgbcolor
+newpath
+106.52 87.31 m
+110.28 87.86 l
+106.43 89.79 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+106.52 87.31 m
+106.43 89.79 l
+102.61 90.77 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+106.52 87.31 m
+102.61 90.77 l
+100.29 90.43 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+106.52 87.31 m
+100.29 90.43 l
+100.34 88.90 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+106.52 87.31 m
+100.34 88.90 l
+102.76 86.76 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+106.52 87.31 m
+102.76 86.76 l
+106.61 84.83 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+106.52 87.31 m
+106.61 84.83 l
+110.43 83.85 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+106.52 87.31 m
+110.43 83.85 l
+112.75 84.19 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+106.52 87.31 m
+112.75 84.19 l
+112.70 85.72 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+106.52 87.31 m
+112.70 85.72 l
+110.28 87.86 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.80 setrgbcolor
+newpath
+76.71 77.16 m
+77.03 78.46 l
+76.69 79.20 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+76.71 77.16 m
+76.69 79.20 l
+75.82 79.07 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+76.71 77.16 m
+75.82 79.07 l
+74.75 78.13 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+76.71 77.16 m
+74.75 78.13 l
+73.89 76.74 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+76.71 77.16 m
+73.89 76.74 l
+73.57 75.43 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+76.71 77.16 m
+73.57 75.43 l
+73.91 74.71 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+76.71 77.16 m
+73.91 74.71 l
+74.78 74.83 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+newpath
+76.71 77.16 m
+74.78 74.83 l
+75.85 75.77 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.66 setrgbcolor
+newpath
+97.49 63.66 m
+76.71 77.16 l
+75.85 75.77 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+0.00 0.00 0.66 setrgbcolor
+newpath
+75.85 75.77 m
+96.63 62.27 l
+97.49 63.66 l
+closepath
+gsave 0 setlinewidth stroke grestore
+fill
+[96.63 75.85 74.78 62.27 75.77 74.83] [0.00 0.00 0.66] [0.00 0.00 0.66] [0.00 0.00 0.60] gouraudtriangle
+[74.78 95.57 96.63 74.83 61.34 62.27] [0.00 0.00 0.60] [0.00 0.00 0.60] [0.00 0.00 0.66] gouraudtriangle
+[95.57 74.78 73.91 61.34 74.83 74.71] [0.00 0.00 0.60] [0.00 0.00 0.60] [0.00 0.00 0.50] gouraudtriangle
+[73.91 94.69 95.57 74.71 61.21 61.34] [0.00 0.00 0.50] [0.00 0.00 0.50] [0.00 0.00 0.60] gouraudtriangle
+[97.47 76.69 77.03 65.70 79.20 78.46] [0.00 0.00 0.50] [0.00 0.00 0.50] [0.00 0.00 0.60] gouraudtriangle
+[77.03 97.81 97.47 78.46 64.97 65.70] [0.00 0.00 0.60] [0.00 0.00 0.60] [0.00 0.00 0.50] gouraudtriangle
+[97.81 77.03 76.71 64.97 78.46 77.16] [0.00 0.00 0.60] [0.00 0.00 0.60] [0.00 0.00 0.66] gouraudtriangle
+[76.71 97.49 97.81 77.16 63.66 64.97] [0.00 0.00 0.66] [0.00 0.00 0.66] [0.00 0.00 0.60] gouraudtriangle
+[64.11 79.06 79.91 84.22 77.50 80.99] [0.00 0.00 0.80] [0.00 0.00 0.78] [0.00 0.00 0.72] gouraudtriangle
+[64.11 79.91 79.00 84.22 80.99 82.94] [0.00 0.00 0.80] [0.00 0.00 0.72] [0.00 0.00 0.63] gouraudtriangle
+[64.11 71.59 73.91 84.22 70.96 71.30] [0.00 0.00 0.80] [0.00 0.00 0.63] [0.00 0.00 0.72] gouraudtriangle
+[64.11 73.91 76.77 84.22 71.30 73.80] [0.00 0.00 0.80] [0.00 0.00 0.72] [0.00 0.00 0.78] gouraudtriangle
+[64.11 76.77 79.06 84.22 73.80 77.50] [0.00 0.00 0.80] [0.00 0.00 0.78] [0.00 0.00 0.78] gouraudtriangle
+
+/Helvetica-Bold findfont dup length dict begin { 1 index /FID ne {def} {pop pop} ifelse}
+ forall /Encoding ISOLatin1Encoding def currentdict end /Helvetica-Bold-ISOLatin1 exch definefont pop
+/Helvetica-Bold-ISOLatin1 findfont [9.68 0 0 9.68 0 0] makefont setfont
+0.00 0.00 0.00 setrgbcolor
+
+121.15 65.14 m (X) show
+
+112.90 107.40 m (Y) show
+
+52.61 87.23 m (Z) show
+
+grestore
+
+showpage
+%%EOF
+%%EndDocument
+
+EndEPSF
+% End of import
+grestore
+grestore
+
+ pSave restore
+showpage
+/$hksErrDict where
+	{
+	/$hksErrDict get 
+	/uninstall_hks_errorhandler get
+	exec
+	}
+	if
+%%EOF

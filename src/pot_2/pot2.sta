@@ -1,0 +1,219 @@
+Abaqus/Explicit 6.14-2                          DATE 05-déc.-2019  TIME 12:20:49
+-------------------------------------------------------------------------------
+ PREPROCESSOR WARNING MESSAGES
+-------------------------------------------------------------------------------
+
+
+***WARNING: There are 1 warning messages in the data (.dat) file.  Please
+            check the data file for possible errors in the input file.
+
+
+-------------------------------------------------------------------------------
+ MODEL INFORMATION (IN GLOBAL X-Y COORDINATES)
+-------------------------------------------------------------------------------
+
+   Total mass in model = 2.88164E-06
+   Center of mass of model = ( 2.368306E-03, 4.052227E+01,-8.152414E-08)
+
+    Moments of Inertia :
+                 About Center of Mass              About Origin
+      I(XX)          2.754531E-03                  7.486340E-03
+      I(YY)          2.157933E-03                  2.157933E-03
+      I(ZZ)          2.754659E-03                  7.486468E-03
+      I(XY)          2.104423E-07                 -6.610616E-08
+      I(YZ)         -2.328929E-12                  7.190692E-12
+      I(ZX)         -8.303481E-08                 -8.303480E-08
+
+-------------------------------------------------------------------------------
+ STABLE TIME INCREMENT INFORMATION
+-------------------------------------------------------------------------------
+
+
+  The stable time increment estimate for each element is based on
+  linearization about the initial state.
+
+
+   Initial time increment = 9.39464E-07
+
+   Statistics for all elements:
+      Mean = 2.78035E-06
+      Standard deviation = 5.17381E-07
+
+   Most critical elements:
+    Element number   Rank    Time increment   Increment ratio
+    (Instance name)
+   ----------------------------------------------------------
+          10          1       9.394638E-07      1.000000E+00
+    POT2-1
+          13          2       9.394638E-07      1.000000E+00
+    POT2-1
+          18          3       9.394643E-07      9.999995E-01
+    POT2-1
+          11          4       9.394645E-07      9.999993E-01
+    POT2-1
+          17          5       9.394645E-07      9.999993E-01
+    POT2-1
+           3          6       9.394647E-07      9.999990E-01
+    POT2-1
+           8          7       9.394647E-07      9.999990E-01
+    POT2-1
+           4          8       9.394649E-07      9.999989E-01
+    POT2-1
+           7          9       9.394650E-07      9.999987E-01
+    POT2-1
+          14         10       9.394651E-07      9.999986E-01
+    POT2-1
+
+
+  Instance name for the most critical element will be printed if the critical
+  element changes or at the beginning of a new page.
+
+
+-------------------------------------------------------------------------------
+
+  INFORMATION REGARDING INITIAL CONTACT OVERCLOSURES FOR NEWLY DEFINED GENERAL
+  CONTACT INTERACTIONS IN STEP 1
+
+-------------------------------------------------------------------------------
+
+  Abaqus/Explicit will attempt to resolve 230 initial node-face overclosure(s).
+
+
+  Maximum initial overclosure for node-face contact is 0.25000 at node 190 of
+  instance POT2-1 and face SNEG of element 3 of instance PLAQUE-2.
+
+
+  No initial edge-edge overclosures found.
+
+
+  Maximum initial contact adjustment is: 0.28235 at node 166 of instance
+  POT2-1.
+
+
+  3 node-face overclosure(s) left unresolved and will be stored as offsets. To
+  help identify the nodes involved in the overclosures a node set
+  InfoNodeUnresolvInitOver has been created. Check the message file for more
+  detailed information.
+
+
+  Maximum unresolved overclosure is 0.46278 at node 241 of instance PLAQUE-2
+  and face SNEG of element 552 of instance POT2-1.
+
+
+  No edge-edge overclosures left unresolved.
+
+
+***WARNING: 0 slave nodes have been found to be coincident with the reference
+            plane of double-sided elements after the completion of the initial
+            overclosure procedure (229 were detected in the original model).
+            It may be neccessary to manually adjust the configuration of these
+            nodes (e.g. via the *CONTACT CLEARANCE ASSIGNMENT option). These
+            slave nodes have been added to the node set
+            WarnNodeCoincidRefPlane. Check the message file for more detailed
+            information.
+
+
+***WARNING: 174 surface intersections have been detected after the completion
+            of the initial overclosure procedure (212 were detected in the
+            original model).  It may be neccessary to manually adjust the
+            configuration of the intersecting surfaces (e.g. via the *CONTACT
+            CLEARANCE ASSIGNMENT option). The elements involved in these
+            intersections have been added to the elset
+            WarnElemSurfaceIntersect. Check the message file for more detailed
+            information.
+
+
+  More detailed information on initial overclosures can be found in the
+  message (.msg) file.
+
+
+***NOTE: You can view the deformed configuration due to the resolution of
+         initial overclosures.  In increment 0, draw the deformed shape or
+         draw a symbol plot of vector displacements.
+
+------------------------------------------------------------------------------
+
+Abaqus/Explicit 6.14-2                          DATE 05-déc.-2019  TIME 12:20:52
+
+The single precision Abaqus/Explicit executable will be used in this analysis.
+
+
+-------------------------------------------------------------------------------
+ SOLUTION PROGRESS
+-------------------------------------------------------------------------------
+
+ STEP 1  ORIGIN 0.0000
+
+  Total memory used for step 1 is approximately 5.4 megabytes.
+  Global time estimation algorithm will be used.
+  Scaling factor:  1.0000
+  Variable mass scaling factor at zero increment: 1.0000
+              STEP     TOTAL       CPU      STABLE    CRITICAL    KINETIC      TOTAL
+INCREMENT     TIME      TIME      TIME   INCREMENT     ELEMENT     ENERGY     ENERGY
+        0  0.000E+00 0.000E+00  00:00:00 8.719E-07          10  0.000E+00  0.000E+00
+INSTANCE WITH CRITICAL ELEMENT: POT2-1
+ODB Field Frame Number      0 of     20 requested intervals at increment zero.
+     3719  5.001E-03 5.001E-03  00:00:01 1.346E-06           2  2.315E-03  4.307E-06
+INSTANCE WITH CRITICAL ELEMENT: POT2-1
+ODB Field Frame Number      1 of     20 requested intervals at  5.000572E-03
+     7434  1.000E-02 1.000E-02  00:00:03 1.346E-06           7  1.156E-03  2.175E-05
+INSTANCE WITH CRITICAL ELEMENT: POT2-1
+ODB Field Frame Number      2 of     20 requested intervals at  1.000008E-02
+    11150  1.500E-02 1.500E-02  00:00:05 1.346E-06           5  1.818E-03 -1.522E-05
+INSTANCE WITH CRITICAL ELEMENT: POT2-1
+ODB Field Frame Number      3 of     20 requested intervals at  1.500092E-02
+    14863  2.000E-02 2.000E-02  00:00:06 1.346E-06           5  2.111E-02  3.944E-04
+INSTANCE WITH CRITICAL ELEMENT: POT2-1
+ODB Field Frame Number      4 of     20 requested intervals at  2.000076E-02
+    18576  2.500E-02 2.500E-02  00:00:08 1.346E-06          14  1.737E-02 -4.221E-05
+INSTANCE WITH CRITICAL ELEMENT: POT2-1
+ODB Field Frame Number      5 of     20 requested intervals at  2.500103E-02
+    22289  3.000E-02 3.000E-02  00:00:09 1.346E-06           5  5.333E-02 -5.108E-04
+INSTANCE WITH CRITICAL ELEMENT: POT2-1
+ODB Field Frame Number      6 of     20 requested intervals at  3.000130E-02
+    26008  3.500E-02 3.500E-02  00:00:11 1.345E-06          15  5.373E-02  6.685E-04
+INSTANCE WITH CRITICAL ELEMENT: POT2-1
+ODB Field Frame Number      7 of     20 requested intervals at  3.500096E-02
+    29726  4.000E-02 4.000E-02  00:00:13 1.345E-06          15  2.565E+00  1.507E-02
+INSTANCE WITH CRITICAL ELEMENT: POT2-1
+ODB Field Frame Number      8 of     20 requested intervals at  4.000104E-02
+    33444  4.500E-02 4.500E-02  00:00:14 1.345E-06          12  2.046E+00  2.263E-02
+INSTANCE WITH CRITICAL ELEMENT: POT2-1
+ODB Field Frame Number      9 of     20 requested intervals at  4.500112E-02
+    37162  5.000E-02 5.000E-02  00:00:16 1.344E-06          12  3.256E+00  3.191E-02
+INSTANCE WITH CRITICAL ELEMENT: POT2-1
+ODB Field Frame Number     10 of     20 requested intervals at  5.000120E-02
+    40880  5.500E-02 5.500E-02  00:00:18 1.343E-06          12  3.215E+00  4.266E-02
+INSTANCE WITH CRITICAL ELEMENT: POT2-1
+ODB Field Frame Number     11 of     20 requested intervals at  5.500122E-02
+    44613  6.000E-02 6.000E-02  00:00:20 1.342E-06          12  4.401E+00  5.259E-02
+INSTANCE WITH CRITICAL ELEMENT: POT2-1
+ODB Field Frame Number     12 of     20 requested intervals at  6.000134E-02
+    48341  6.500E-02 6.500E-02  00:00:21 1.342E-06          12  4.059E+00  6.183E-02
+INSTANCE WITH CRITICAL ELEMENT: POT2-1
+ODB Field Frame Number     13 of     20 requested intervals at  6.500097E-02
+    52069  7.000E-02 7.000E-02  00:00:23 1.342E-06          10  4.578E+00  6.228E-02
+INSTANCE WITH CRITICAL ELEMENT: POT2-1
+ODB Field Frame Number     14 of     20 requested intervals at  7.000061E-02
+    55797  7.500E-02 7.500E-02  00:00:25 1.342E-06          15  5.024E+00  6.535E-02
+INSTANCE WITH CRITICAL ELEMENT: POT2-1
+ODB Field Frame Number     15 of     20 requested intervals at  7.500025E-02
+    59526  8.000E-02 8.000E-02  00:00:27 1.342E-06          15  4.282E+00  7.124E-02
+INSTANCE WITH CRITICAL ELEMENT: POT2-1
+ODB Field Frame Number     16 of     20 requested intervals at  8.000123E-02
+    63254  8.500E-02 8.500E-02  00:00:28 1.341E-06          15  4.321E+00  7.532E-02
+INSTANCE WITH CRITICAL ELEMENT: POT2-1
+ODB Field Frame Number     17 of     20 requested intervals at  8.500087E-02
+    66982  9.000E-02 9.000E-02  00:00:30 1.341E-06          15  4.540E+00  7.785E-02
+INSTANCE WITH CRITICAL ELEMENT: POT2-1
+ODB Field Frame Number     18 of     20 requested intervals at  9.000050E-02
+    70710  9.500E-02 9.500E-02  00:00:32 1.340E-06          15  6.363E+00  7.857E-02
+INSTANCE WITH CRITICAL ELEMENT: POT2-1
+ODB Field Frame Number     19 of     20 requested intervals at  9.500014E-02
+    74439  1.000E-01 1.000E-01  00:00:34 1.340E-06          15  5.347E+00  8.888E-02
+INSTANCE WITH CRITICAL ELEMENT: POT2-1
+Restart Number  1 at 0.10000
+ODB Field Frame Number     20 of     20 requested intervals at  1.000000E-01
+
+  THE ANALYSIS HAS COMPLETED SUCCESSFULLY
+
